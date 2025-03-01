@@ -1,0 +1,30 @@
+/*Follw that theam to your pages*/
+
+/* global variables for theme colors */
+:root {
+    /* Main Theme Colors (SDG 14: Life Below Water) */
+    --rich-black: #000814;      /* Deep ocean black */
+    --yale-blue: #003566;       /* Dark blue for depth */
+    --pacific-cyan: #00b4d8;    /* Bright cyan for water */
+    --picton-blue: #5fa8d3;     /* Softer blue for waves */
+    --alice-blue: #e0f2ff;      /* Light blue for sky/foam */
+
+
+    /* Utility Colors  */
+
+    --success: #2ecc71;         /* Modern green for "done" (seaweed-inspired) */
+
+    --warning: #f39c12;         /* Warm orange for alerts (coral-inspired) */
+
+    --caution: #e67e22;
+    /* Deeper orange for caution (sunset over water) */
+
+    --error: #d62828;
+    /* Modern red for errors (fire engine red, subtle nod to danger) */
+
+    --info: #3498db;
+    /* Bright blue for info (harmonizes with theme) */
+
+    --neutral: #7f8c8d;
+    /* Gray for neutral text (rock/sand-inspired) */
+}
