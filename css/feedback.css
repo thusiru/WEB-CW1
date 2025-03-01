@@ -1,0 +1,129 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  color: black;
+}
+legend {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #5eae0f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+form {
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(206, 206, 206);
+  padding: 18px;
+}
+fieldset {
+  border: none;
+}
+.fieldset_component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 18px;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+}
+
+label {
+  font-size: 18px;
+  text-transform: capitalize;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input {
+  padding: 15px;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(209, 209, 209);
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  border: 1px solid rgb(209, 209, 209);
+  height: 16px;
+}
+
+textarea {
+  height: 40px;
+  padding: 10px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+option {
+  padding: 10px;
+}
+
+#submit,
+#cancel {
+  padding: 0px;
+  background-color: #5eae0f;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  color: white;
+  transition: all 0.2s linear;
+  margin-bottom: 10px;
+}
+#submit:hover,
+#cancel:hover {
+  opacity: 0.7;
+}
+#cancel {
+  background-color: #ff0000;
+}
+#radio_group {
+}
+#select_option {
+  height: 40px;
+}
+#select_option_multiple {
+  height: max-content;
+}
+.emoji-rating {
+  display: flex;
+  flex-direction: row;
+}
+.emoji-rating label {
+  padding: 10px;
+  font-size: 22px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.emoji-rating input {
+  display: none;
+}
+.emoji-rating input:checked + label {
+  transform: scale(1.2); /* Enlarges selected emoji */
+  opacity: 1;
+}
