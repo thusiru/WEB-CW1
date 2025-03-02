@@ -1,3 +1,125 @@
-body {
+body,
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  background: black;
+  height: 8vh;
+}
+
+footer {
+  background: black;
+  height: 30vh;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/thusiru/underwater-bg1.webp");
   background-color: black;
+  background-size: cover;
+  background-position: top;
+}
+
+#intro-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgba(149, 222, 236, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  margin: 0;
+  color: #003566;
+}
+
+#intro-details p {
+  max-width: 650px;
+  color: #003566;
+  margin: 0;
+}
+
+#intro-btn {
+  width: fit-content;
+  color: #e0f2ff;
+  background-color: #003566;
+  padding: 13px;
+  border-radius: 15px;
+}
+
+#programs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#sort {
+  height: fit-content;
+  border-radius: 10px;
+  appearance: none;
+  background-color: white;
+  border: unset;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+select {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  flex: 1 0 30%;
+  min-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
