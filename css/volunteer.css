@@ -3,12 +3,14 @@ html {
   scroll-behavior: smooth;
   height: 100vh;
   margin: 0;
+  background-color: #e0f2ff;
+  font-family: roboto, sans-serif;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 header {
@@ -42,10 +44,11 @@ footer {
   gap: 20px;
   text-align: center;
   margin: 20px;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 25px;
   background-color: rgba(149, 222, 236, 0.5);
   backdrop-filter: blur(2px);
+  user-select: none;
 }
 
 h1 {
@@ -65,32 +68,50 @@ h1 {
   background-color: #003566;
   padding: 13px;
   border-radius: 15px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+#intro-btn:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  scale: 1.02;
 }
 
 #programs-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
 #sort {
   height: fit-content;
   border-radius: 10px;
-  appearance: none;
-  background-color: white;
   border: unset;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
   padding-right: 30px;
   cursor: pointer;
+  transition: box-shadow 0.3s;
 }
 
 select {
+  appearance: none;
+  background-color: #e0f2ff;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>');
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
+}
+
+select:focus {
+  outline: none;
+}
+
+#sort:hover {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -111,7 +132,8 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .card:hover {
