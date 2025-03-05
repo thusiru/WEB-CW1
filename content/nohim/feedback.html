@@ -6,176 +6,183 @@
     <title>Base Template</title>
     <link rel="stylesheet" href="../../css/global.css" />
     <link rel="stylesheet" href="../../css/feedback.css" />
+    <script async src="/js/feedback.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Website Title</h1>
-        <nav aria-label="Main Navigation">
-          <ul>
-            <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="profile.html">User Profile</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="team.html">Team</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!-- <div class="popup_container">
+      <div class="popup">Please fill this field</div>
+    </div> -->
 
-      <main>
-        <div class="container">
-          <h1>Feedback form</h1>
-          <form action="#">
-            <fieldset id="user_information">
-              <legend><h2>Personal Details</h2></legend>
-              <div class="fieldset_component">
-                <label for="full_name">Full name</label>
+    <header>
+      <h1>Website Title</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Feedback form</h1>
+        <form action="#">
+          <fieldset id="user_information">
+            <legend><h2>Personal Details</h2></legend>
+            <p id="instruction">
+              The required field are marked with * Please fill them before
+              submitting
+            </p>
+            <div class="fieldset_component">
+              <label for="full_name">*Full name</label>
+              <input
+                type="text"
+                name="full_name"
+                placeholder="Please enter your name"
+                id="full_name"
+              />
+            </div>
+            <div class="fieldset_component">
+              <label for="email_address">*Email Address</label>
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter your Email address"
+                id="email_address"
+              />
+            </div>
+            <div class="fieldset_component">
+              <label for="phone_number">Phone number</label>
+              <input
+                type="tel"
+                name="phone_number"
+                placeholder="Enter Your Phone number"
+                id="phone_number"
+              />
+            </div>
+            <div class="fieldset_component">
+              <label for="address">*Address</label>
+              <textarea
+                name="address"
+                id="address"
+                placeholder="Enter your Address"
+                maxlength="250"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset id="user_feedback">
+            <legend><h2>Feedback details</h2></legend>
+
+            <div class="fieldset_component">
+              <label for="select_option">How did you hear about us</label>
+              <select id="select_option">
+                <option value="Friend">Friend</option>
+                <option value="Search Engine">Search Engine</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Institution">Institution</option>
+              </select>
+            </div>
+            <div class="fieldset_component">
+              <label for="select_option_multiple"
+                >Which area do you like to give feedback?</label
+              >
+              <select
+                name="select_option_multiple"
+                id="select_option_multiple"
+                multiple
+                size="3"
+              >
+                <option value="plastic_pollution">Plastic Pollution</option>
+                <option value="overfishing">Overfishing</option>
+                <option value="coral_reef_protection">
+                  Coral Reef Protection
+                </option>
+                <option value="marine_biodiversity">
+                  Marine Biodiversity Conservation
+                </option>
+              </select>
+            </div>
+            <div class="fieldset_component">
+              <label for="date">*Please choose the date of submission</label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div class="fieldset_component">
+              <label for="comments">Enter your thoughts about us</label>
+              <textarea
+                name="comments"
+                id="comments"
+                placeholder="Enter your thoughts"
+                maxlength="250"
+              ></textarea>
+            </div>
+            <div class="fieldset_component">
+              <label for="file">Please upload your file here</label>
+              <input type="file" name="file" id="file" />
+            </div>
+            <div class="fieldset_component" id="ratings">
+              <label for="select_option">How do you rate our website? </label>
+              <div class="emoji-rating">
                 <input
-                  type="text"
-                  name="full_name"
-                  placeholder="Please enter your name"
-                  id="full_name"
-                />
-              </div>
-              <div class="fieldset_component">
-                <label for="email_address">Email Address</label>
+                  type="radio"
+                  id="emoji1"
+                  name="emoji"
+                  value="rating1"
+                /><label for="emoji1">😡</label>
                 <input
-                  type="email"
-                  name="email_address"
-                  placeholder="Enter your Email address"
-                  id="email_address"
-                />
-              </div>
-              <div class="fieldset_component">
-                <label for="phone_number">Phone number</label>
+                  type="radio"
+                  id="emoji2"
+                  name="emoji"
+                  value="rating2"
+                /><label for="emoji2">🙁</label>
                 <input
-                  type="tel"
-                  name="phone_number"
-                  placeholder="Enter Your Phone number"
-                  id="phone_number"
-                />
+                  type="radio"
+                  id="emoji3"
+                  name="emoji"
+                  value="rating3"
+                /><label for="emoji3">😐</label>
+                <input
+                  type="radio"
+                  id="emoji4"
+                  name="emoji"
+                  value="rating4"
+                /><label for="emoji4">🙂</label>
+                <input
+                  type="radio"
+                  id="emoji5"
+                  name="emoji"
+                  value="rating5"
+                /><label for="emoji5">😃</label>
               </div>
-              <div class="fieldset_component">
-                <label for="address">Address</label>
-                <textarea
-                  name="address"
-                  id="address"
-                  placeholder="Enter your Address"
-                  maxlength="250"
-                ></textarea>
-              </div>
-            </fieldset>
+            </div>
 
-            <fieldset id="user_feedback">
-              <legend><h2>Feedback details</h2></legend>
+            <div class="fieldset_component">
+              <input type="submit" value="SUBMIT" id="submit" />
+              <input type="reset" value="CANCEL" id="cancel" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
 
-              <div class="fieldset_component">
-                <label for="select_option">How did you hear about us</label>
-                <select id="select_option">
-                  <option value="Friend">Friend</option>
-                  <option value="Search Engine">Search Engine</option>
-                  <option value="Newspaper">Newspaper</option>
-                  <option value="Magazine">Magazine</option>
-                  <option value="Institution">Institution</option>
-                </select>
-              </div>
-              <div class="fieldset_component">
-                <label for="select_option_multiple"
-                  >Which area do you like to give feedback?</label
-                >
-                <select
-                  name="select_option_multiple"
-                  id="select_option_multiple"
-                  multiple
-                  size="3"
-                >
-                  <option value="plastic_pollution">Plastic Pollution</option>
-                  <option value="overfishing">Overfishing</option>
-                  <option value="coral_reef_protection">
-                    Coral Reef Protection
-                  </option>
-                  <option value="marine_biodiversity">
-                    Marine Biodiversity Conservation
-                  </option>
-                </select>
-              </div>
-              <div class="fieldset_component">
-                <label for="date">Please choose the date of submission</label>
-                <input type="date" name="date" id="date" />
-              </div>
-              <div class="fieldset_component">
-                <label for="comments">Enter your thoughts about us</label>
-                <textarea
-                  name="comments"
-                  id="comments"
-                  placeholder="Enter your thoughts"
-                  maxlength="250"
-                ></textarea>
-              </div>
-              <div class="fieldset_component">
-                <label for="file">Please upload your file here</label>
-                <input type="file" name="file" id="file" />
-              </div>
-              <div class="fieldset_component" id="ratings">
-                <label for="select_option">How do you rate our website? </label>
-                <div class="emoji-rating">
-                  <input
-                    type="radio"
-                    id="emoji1"
-                    name="emoji"
-                    value="rating1"
-                  /><label for="emoji1">😡</label>
-                  <input
-                    type="radio"
-                    id="emoji2"
-                    name="emoji"
-                    value="rating2"
-                  /><label for="emoji2">🙁</label>
-                  <input
-                    type="radio"
-                    id="emoji3"
-                    name="emoji"
-                    value="rating3"
-                  /><label for="emoji3">😐</label>
-                  <input
-                    type="radio"
-                    id="emoji4"
-                    name="emoji"
-                    value="rating4"
-                  /><label for="emoji4">🙂</label>
-                  <input
-                    type="radio"
-                    id="emoji5"
-                    name="emoji"
-                    value="rating5"
-                  /><label for="emoji5">😃</label>
-                </div>
-              </div>
-
-              <div class="fieldset_component">
-                <input type="submit" value="SUBMIT" id="submit" />
-                <input type="reset" value="CANCEL" id="cancel" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </main>
-
-      <footer>
-        <p>&copy; All rights reserved.</p>
-        <p>
-          Page Editor: <a href="pageEditor_ST1.html">Student 1</a> |
-          <a href="pageEditor_ST2.html">Student 2</a> |
-          <a href="pageEditor_ST3.html">Student 3</a> |
-          <a href="pageEditor_ST4.html">Student 4</a>
-        </p>
-        <p>
-          <a href="validation.html">Validation</a> |
-          <a href="accessibility.html">Accessibility Compliance</a>
-        </p>
-      </footer>
-    </div>
+    <footer>
+      <p>&copy; All rights reserved.</p>
+      <p>
+        Page Editor: <a href="pageEditor_ST1.html">Student 1</a> |
+        <a href="pageEditor_ST2.html">Student 2</a> |
+        <a href="pageEditor_ST3.html">Student 3</a> |
+        <a href="pageEditor_ST4.html">Student 4</a>
+      </p>
+      <p>
+        <a href="validation.html">Validation</a> |
+        <a href="accessibility.html">Accessibility Compliance</a>
+      </p>
+    </footer>
   </body>
 </html>

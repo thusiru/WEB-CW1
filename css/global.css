@@ -5,7 +5,7 @@
   /* Main Theme Colors (SDG 14: Life Below Water) */
   --rich-black: #000814; /* Deep ocean black */
   --yale-blue: #003566; /* Dark blue for depth */
-  --pacific-cyan: #00b4d8; /* Bright cyan for water */
+  --pacific-cyan: rgb(0, 180, 216); /* Bright cyan for water */
   --picton-blue: #5fa8d3; /* Softer blue for waves */
   --alice-blue: #e0f2ff; /* Light blue for sky/foam */
 

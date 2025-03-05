@@ -18,7 +18,17 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  background-size: cover;
+  /* background-image: url(../images/thusiru/underwater-bg.webp); */
+
   /* gap: 12px; */
+}
+.team-member a {
+  color: white;
+  text-decoration: none;
+}
+.team-member li {
+  list-style-type: square;
 }
 
 .team-member:hover {

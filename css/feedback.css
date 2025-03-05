@@ -51,6 +51,7 @@ select {
   border-radius: 5px;
   border: 1px solid rgb(209, 209, 209);
   width: 100%;
+  transition: border-color 0.2s linear;
 }
 
 select {
@@ -112,4 +113,35 @@ option {
 .emoji-rating input:checked + label {
   transform: scale(1.2); /* Enlarges selected emoji */
   opacity: 1;
+}
+.popup {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  background-color: var(--error);
+  padding: 12px;
+  color: var(--alice-blue);
+  border-radius: 10px;
+  /* display: none; */
+}
+.border-red {
+  border-color: #ff0000c4;
+  border-width: 2px;
+}
+.border-red::placeholder {
+  color: red;
+  font-size: 16px;
+}
+#instruction {
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+.popup_container {
+  width: 100vw;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
 }
