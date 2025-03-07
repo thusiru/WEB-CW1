@@ -1,100 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map - Life Under the Water</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        svg {
+            background-color: var(--alice-blue);
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            display: block;
+            border: 2px solid var(--yale-blue);
+            border-radius: 10px;
+        }
+        .node {
+            fill: var(--pacific-cyan);
+            stroke: var(--yale-blue);
+            stroke-width: 2px;
+        }
+        text {
+            fill: var(--rich-black);
+            font-weight: bold;
+            font-size: 14px;
+        }
+        line {
+            stroke: var(--yale-blue);
+            stroke-width: 2;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="marine-life.html">Marine Life</a></li>
-            <li><a href="conservation.html">Conservation Efforts</a></li>
-            <li><a href="profile.html" class="active">User Profile</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-        </ul>     
+        <h1>Site Map - Life Under the Water</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
     </header>
-<main id="profile page">
-    <section class="profile-container">
-        <h1>user profile - life under the water </h1>
-        <img src="user-placeholder.png" alt="profile picture" class="profile-img">
-        <form>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter Your Full Name"required>
 
-            <label for="email">email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <main>
+        <h2>Website Structure - Life Under the Water</h2>
+        <svg viewBox="0 0 900 600">
+            <line x1="450" y1="90" x2="450" y2="130" />
+            <a href="home.html"><rect class="node" x="400" y="50" width="100" height="40" /><text x="450" y="75" text-anchor="middle">Home</text></a>
+            <a href="volunteer.html"><rect class="node" x="200" y="150" width="150" height="40" /><text x="275" y="175" text-anchor="middle">Volunteer</text></a>
+            <a href="table.html"><rect class="node" x="400" y="150" width="150" height="40" /><text x="475" y="175" text-anchor="middle">Table</text></a>
+            <a href="profile.html"><rect class="node" x="600" y="150" width="150" height="40" /><text x="675" y="175" text-anchor="middle">Profile</text></a>
+            <line x1="450" y1="90" x2="275" y2="150" />
+            <line x1="450" y1="90" x2="475" y2="150" />
+            <line x1="450" y1="90" x2="675" y2="150" />
+            <a href="feedback.html"><rect class="node" x="600" y="230" width="150" height="40" /><text x="675" y="255" text-anchor="middle">Feedback</text></a>
+            <a href="sitemap.html"><rect class="node" x="400" y="300" width="100" height="40" /><text x="450" y="325" text-anchor="middle">Sitemap</text></a>
+            <a href="team.html"><rect class="node" x="400" y="400" width="100" height="40" /><text x="450" y="425" text-anchor="middle">Team</text></a>
+        </svg>
+    </main>
 
-            <label for="bio">Tell Us About Your Interest in Marine Life:</label>
-            <textarea id="bio" name="bio" rows="4" placeholder="Why do you love the ocean? Your favorite marine animal?"></textarea>
-
-            <label for="favorite-species">Favorite Underwater Species:</label>
-            <input type="text" id="favorite-species" name="favorite-species" placeholder="E.g., Dolphins, Coral Reefs, Sharks...">
-
-            <button type="submit"> Save Profile </button>
-
-        </form>
-    </section>
-</main>
-<!-- Footer Section (Shared Template) -->
-<footer>
-    <p>&copy; 2024 Life Under the Water. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>Created by Student 4 - <a href="pageEditor_ST4.html">Page Editor</a></p>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<main id="sitemap page">
-    <section class="sitemap-container">
-        <h1> web site sitemap - LIFE UNDER THE WATER</h1>
-        <ul>
-            <li><a href="index.html"></a></li>
-            <li>
-                <a href="marine-life.html"> marin Life</a></li>
-                <ul>
-                    <li><a href="species.html">spices Overview</a></li>
-                    <li><a href="habitats.html">Habitats & Ecosystems</a></li>
-            
-                </ul>        
-            </li>
-            <li>
-                <a herf="conservation.html">conservation Efforts</a>
-                <ul>
-                    <li><a href="project.html">ongoing project </a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
-                </ul>
-            </li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="profile.html">User Profile</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 life under the water.all rights reserved.</p>
-</footer>
-</body>
