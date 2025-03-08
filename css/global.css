@@ -6,7 +6,8 @@
   --yale-blue: #003566; /* Dark blue for depth */
   --pacific-cyan: rgb(6, 149, 232); /* Bright cyan for water */
   --picton-blue: #5fa8d3;
-  --alice-blue: #e0f2ff;
+  --alice-blue: #ebf7ff;
+
   --success: #2ecc71; /* Seaweed-inspired green */
   --warning: #f39c12; /* Coral-inspired orange */
   --caution: #e67e22; /* Sunset over water */
@@ -54,11 +55,36 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
-h2, h3 {
+h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 2rem; /* 32px */
   color: var(--picton-blue);
 }
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem; /* 24px */
+  color: var(--picton-blue);
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem; /* 24px */
+  color: var(--picton-blue);
+}
+
+h5 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem; /* 16px */
+  color: var(--picton-blue);
+}
+
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem; /* 12px */
+  color: var(--picton-blue);
+}
+
 
 /* Wrapper */
 .main-wrapper {
