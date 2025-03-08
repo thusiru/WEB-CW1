@@ -4,7 +4,7 @@ const submit = document.getElementById('submit')
 const reset = document.getElementById('cancel')
 
 const body = document.querySelector('body')
-let required = ['full_name', 'email_address', 'date'];
+let required = ['full_name', 'email_address', 'date', 'comments'];
 let requiredElements = []
 
 required.forEach(el => {
@@ -22,18 +22,32 @@ Please fill this field
 let emptyElements = []
 let isClicked = false
 submit.addEventListener('click', (e) => {
-    e.preventDefault()
     emptyElements = []
     requiredElements.forEach((el, i) => {
         if (el.value == '') {
             emptyElements.push(el)
-            el.classList.add('border-red')
         }
 
     })
     if (emptyElements.length > 0) {
+        e.preventDefault()
         alert('Please fill the required fields!!')
+        emptyElements.forEach(el => {
+            el.classList.add('border-red')
+
+        })
     }
+    else {
+        const form = document.querySelector('form')
+        const submitEvent = new Event('submit', {
+            bubbles: true,
+            cancelable: false,
+        });
+        form.dispatchEvent(submitEvent)
+    }
+
+
+
 
 })
 

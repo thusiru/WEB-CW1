@@ -6,7 +6,7 @@
   --rich-black: #000814; /* Deep ocean black */
   --yale-blue: #003566; /* Dark blue for depth */
   --pacific-cyan: rgb(0, 180, 216); /* Bright cyan for water */
-  --picton-blue: #5fa8d3; /* Softer blue for waves */
+  --picton-blue: rgb(94, 169, 212); /* Softer blue for waves */
   --alice-blue: #e0f2ff; /* Light blue for sky/foam */
 
   /* Utility Colors  */
@@ -19,6 +19,7 @@
   /* Deeper orange for caution (sunset over water) */
 
   --error: #d62828;
+  --error-2:#ff0e0e;
   /* Modern red for errors (fire engine red, subtle nod to danger) */
 
   --info: #3498db;
@@ -26,6 +27,9 @@
 
   --neutral: #7f8c8d;
   /* Gray for neutral text (rock/sand-inspired) */
+  --box-shadow:0px 0px 30px #6c6c6c36;
+  --white:rgb(255, 255, 255);
+  --content-border:1px solid var(--pacific-cyan)
 }
 
 * {
@@ -50,10 +54,20 @@ footer {
   color: #fff;
   padding: 15px 0;
   text-align: center;
+  background-image:  linear-gradient(
+    rgba(0, 0, 0, 0.5), /* semi-transparent black */
+    rgba(0, 0, 0, 0.5)
+  ),  url('/images/thusiru/underwater-bg.webp');
+  background-size: cover;
+  background-position:60px 500px; /* Move the background to the top center */
+  
 }
 
+
+
+
 nav {
-  background: var(--pacific-cyan);
+  /* background: var(--pacific-cyan); */
   padding: 10px;
 }
 nav ul li {
@@ -74,3 +88,10 @@ main {
   min-height: 100vh;
   margin: 30px;
 }
+
+@media (max-width:800px) {
+aside{
+  display: none;
+}
+}
+
