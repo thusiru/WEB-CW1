@@ -14,7 +14,7 @@
     </div> -->
 
     <header>
-      <h1>Website Title</h1>
+      <h1>Life Below Water</h1>
       <nav aria-label="Main Navigation">
         <ul>
           <li><a href="home.html" class="active">Home</a></li>
@@ -28,18 +28,18 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-wrapper">
       <div class="container">
         <h1>Feedback form</h1>
         <form action="#">
           <fieldset id="user_information">
             <legend><h2>Personal Details</h2></legend>
             <p id="instruction">
-              The required field are marked with * Please fill them before
+              The required field are marked with* Please fill them before
               submitting
             </p>
             <div class="fieldset_component">
-              <label for="full_name">*Full name</label>
+              <label for="full_name"><div class="req">**</div>Full name</label>
               <input
                 type="text"
                 name="full_name"
@@ -48,7 +48,7 @@
               />
             </div>
             <div class="fieldset_component">
-              <label for="email_address">*Email Address</label>
+              <label for="email_address"><div class="req">**</div>Email Address</label>
               <input
                 type="email"
                 name="email_address"
@@ -66,7 +66,7 @@
               />
             </div>
             <div class="fieldset_component">
-              <label for="address">*Address</label>
+              <label for="address"><div class="req">**</div>Address</label>
               <textarea
                 name="address"
                 id="address"
@@ -110,11 +110,11 @@
               </select>
             </div>
             <div class="fieldset_component">
-              <label for="date">*Please choose the date of submission</label>
+              <label for="date"><div class="req">**</div>Please choose the date of submission</label>
               <input type="date" name="date" id="date" />
             </div>
             <div class="fieldset_component">
-              <label for="comments">Enter your thoughts about us</label>
+              <label for="comments"><div class="req">**</div>Enter your thoughts about us</label>
               <textarea
                 name="comments"
                 id="comments"
