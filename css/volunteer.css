@@ -275,12 +275,13 @@ h2 {
 
 .btn {
   border: 1px solid #000814;
-  padding: 5px;
-  border-radius: 8px;
+  padding: 6px 0;
+  border-radius: 10px;
   width: 300px;
   height: fit-content;
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
   font-weight: 500;
   transition: box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
@@ -379,13 +380,15 @@ h2 {
 #feedback-container {
   border-radius: 5px;
   max-width: 512px;
+  margin-top: 10px;
   padding: 20px;
+  cursor: auto;
 }
 
 #feedback-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .input {
@@ -410,10 +413,14 @@ h2 {
   font-size: small;
 }
 
+.textarea {
+  height: 100px;
+}
+
 #form-btn {
   display: flex;
   justify-content: stretch;
-  gap: 10px;
+  gap: 15px;
 }
 
 #reset-btn {
@@ -421,6 +428,7 @@ h2 {
   background-color: #e0f2ff;
   padding: 5px 0;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #submit-btn {
@@ -428,4 +436,5 @@ h2 {
   background-color: #000814;
   color: #e0f2ff;
   font-weight: 600;
+  cursor: pointer;
 }
