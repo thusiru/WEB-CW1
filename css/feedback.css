@@ -9,10 +9,11 @@ legend {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  margin: 30px;
 }
 form {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 680px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -39,6 +40,7 @@ label {
   width: 100%;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: left;
 }
 input {
   padding: 15px;
@@ -144,4 +146,15 @@ option {
   top: 0;
   left: 0;
   z-index: 11;
+}
+.req{
+  display: inline;
+  /* background-color: var(--error-2); */
+  color: var(--error-2);
+  padding: 3px;
+  margin: 4px;
+  height: fit-content;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 300;
 }

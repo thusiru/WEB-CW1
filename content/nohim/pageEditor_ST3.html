@@ -6,11 +6,12 @@
     <title>Base Template</title>
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/pageEditor_validator.css" />
+    <link rel="stylesheet" href="/css/pageEditor_ST3.css">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Website Title</h1>
+        <h1>Life Below Water</h1>
         <nav aria-label="Main Navigation">
           <ul>
             <li><a href="home.html" class="active">Home</a></li>
@@ -24,34 +25,52 @@
         </nav>
       </header>
 
-      <main>
+      <main class="main-wrapper">
         <div class="container">
           <!-- Main content area -->
           <main>
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <section>
+            <section id="team_editor">
               <h2 id="splash">Team Page</h2>
               <h3>Technical Description</h3>
+              <div class="image_container"><img src="\content\nohim\pageEditorSnapshots\teamSnapshot.png" alt=""></div>
+            
               <p>
-                Explain the HTML and CSS techniques used to implement this page.
-                Justify the logic and purpose of the key tags and styling
-                choices focusing on functionality and design without copying
-                large code sections. Explain the purpose of key HTML tags and
-                CSS properties. Specify key HTML tags and CSS properties used to
-                create structure and styling.
+                The Team page is mainly consist of the standard html tags including header,footer for accessibility and head and body for implementing the page. the head contains link to relevent css files and javascript files. i have used the javascript file as asynchornus meaning that javascript will load regardless of whether the page has been already loaded or not. which is essential for functioning. the body tag consist of mainly this structure.
+                <pre>
+                  &lt;body&gt;
+                      &lt;header&gt;...&lt;/header&gt;
+                      &lt;main class="main-wrapper"&gt;
+                      &lt;/main&gt;
+                      &lt;footer&gt;...&lt;/footer&gt;
+                  &lt;/body&gt;
+                </pre>
+              
               </p>
 
               <h3>Accessibility</h3>
               <p>
-                Explain how you used to addressed accessibility in this
-                particular page you implemented.
+                <p>In the page I implemented, accessibility is addressed in the following ways:</p>
+
+                <ul>
+                  <li><strong>Semantic HTML Tags</strong>: I used <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to structure the page, making it easier for screen readers to understand the layout.</li>
+                  
+                  <li><strong>&#39;aria-label&#39;</strong>: The <code>&lt;nav&gt;</code> tag includes an <code>aria-label="Main Navigation"</code>, which helps screen readers identify the purpose of the navigation section.</li>
+                
+                  <li><strong>Alternative Text for Images</strong>: I added <code>alt</code> attributes to the <code>&lt;img&gt;</code> tags to provide text descriptions of the images for users who are visually impaired.</li>
+                
+                  <li><strong>Descriptive Links</strong>: I used clear, descriptive text for links and buttons to make it easier for users to understand the purpose of each action.</li>
+                </ul>
+                
+                <p>These elements ensure the page is more accessible for users with disabilities, improving navigation and understanding.</p>
+                
               </p>
 
               <h3>Link to the validation page</h3>
               <!-- Update the path to link the Page Editor with the splash page -->
-              <p>
-                <a href="validation_ST0.html#splashVal"
+              <p> 
+                <a href="\content\nohim\validation_ST3.html#team_validation"
                   >Include a link to the validation page</a
                 >, use the marker to jump to the corresponding section of the
                 validation page.
@@ -60,34 +79,49 @@
 
               <h3>Link to the page</h3>
               <p>
-                <a href="splash.html"
+                <a href="./team.html"
                   >Include a link to the actual page you describe.</a
                 >
               </p>
             </section>
 
-            <section>
+            <section id="feedback_editor">
               <h2 id="volunteer">Feedback Page</h2>
               <h3>Technical Description</h3>
-              <p>
-                Explain the HTML and CSS techniques used to implement this page.
-                Justify the logic and purpose of the key tags and styling
-                choices focusing on functionality and design without copying
-                large code sections. Explain the purpose of key HTML tags and
-                CSS properties. Specify key HTML tags and CSS properties used to
-                create structure and styling.
-              </p>
+              <div class="image_container">  <img src="\content\nohim\pageEditorSnapshots\FeedbackSnapshot.png" alt=""></div>
+            
 
+              <p>
+                The feedback page is mainly consist of head and body which is a crucial part of standard html doucument. inside the head tag theare are relevent css files for proper styling. and inside the body tag there are mainly header,main and footer which is easy to understand and navigate. inside the main tag there is a secondary div tag with the class container for proper alignment. the form is placed inside this tag. the form consist of different inputs and labels to enhance user feedback. the feedback page use this structure.
+                <pre>
+                  &lt;body&gt;
+                      &lt;header&gt;...&lt;/header&gt;
+                      &lt;main class="main-wrapper"&gt;
+                      &lt;form&gt;....&lt;form&gt;
+                      &lt;/main&gt;
+                      &lt;footer&gt;...&lt;/footer&gt;
+                  &lt;/body&gt;
+                </pre>
+               
+              </p>
               <h3>Accessibility</h3>
               <p>
-                Explain how you used to addressed accessibility in this
-                particular page you implemented.
+                <ul>
+                  <li><strong>Semantic HTML Tags</strong>: I used <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to structure the page, making it easier for screen readers to understand the layout.</li>
+                  
+                  <li><strong>&#39;aria-label&#39;</strong>: The <code>&lt;nav&gt;</code> tag includes an <code>aria-label="Main Navigation"</code>, which helps screen readers identify the purpose of the navigation section.</li>
+                
+                  <li><strong>Alternative Text for Images</strong>: I added <code>alt</code> attributes to the <code>&lt;img&gt;</code> tags to provide text descriptions of the images for users who are visually impaired.</li>
+                
+                  <li><strong>Descriptive Links</strong>: I used clear, descriptive text for links and buttons to make it easier for users to understand the purpose of each action.</li>
+                </ul>
+                
               </p>
 
               <h3>Link to the validation page</h3>
               <!-- Update the path to link the Page Editor with the splash page -->
               <p>
-                <a href="validation_ST0.html#volunteerVal"
+                <a href="\content\nohim\validation_ST3.html#feedback_validation"
                   >Include a link to the validation page</a
                 >, use the marker to jump to the corresponding section of the
                 validation page.
@@ -96,15 +130,18 @@
 
               <h3>Link to the page</h3>
               <p>
-                <a href="volunteer.html"
+                <a href="./feedback.html"
                   >Include a link to the actual page you describe.</a
                 >
               </p>
             </section>
 
-            <section>
+            <section id="content_editor">
               <h2 id="content">Content Page</h2>
               <h3>Technical Description</h3>
+              <div class="image_container">
+                <img src="/content/nohim/pageEditorSnapshots/contentSnapshot.png" alt="">
+              </div>
               <p>
                 Explain the HTML and CSS techniques used to implement this page.
                 Justify the logic and purpose of the key tags and styling
@@ -123,7 +160,7 @@
               <h3>Link to the validation page</h3>
               <!-- Update the path to link the Page Editor with the splash page -->
               <p>
-                <a href="validation_ST0.html#contentVal"
+                <a href="./validation_ST3.html#content_validation"
                   >Include a link to the validation page</a
                 >, use the marker to jump to the corresponding section of the
                 validation page.
@@ -132,7 +169,7 @@
 
               <h3>Link to the page</h3>
               <p>
-                <a href="content.html"
+                <a href="./content_ST3.html"
                   >Include a link to the actual page you describe.</a
                 >
               </p>
@@ -201,9 +238,9 @@
               </ul>
               <li>Student 3</li>
               <ul>
-                <li><a href="#">Feedback page</a></li>
-                <li><a href="#">Team page</a></li>
-                <li><a href="#">Content page</a></li>
+                <li><a href="./feedback.html">Feedback page</a></li>
+                <li><a href="./team.html">Team page</a></li>
+                <li><a href="./content_ST3.html">Content page</a></li>
               </ul>
               <li>Student 4</li>
               <ul>
