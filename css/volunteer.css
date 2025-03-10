@@ -16,13 +16,6 @@ html {
 }
 
 /* Copied from Student 2 via chrome dev tools */
-header {
-  padding: 1rem 0;
-  width: 100%;
-  background: var(--pacific-cyan, #0074c2);
-  color: var(--alice-blue, #ebf7ff);
-}
-
 :root {
   --rich-black: #000814;
   --yale-blue: #003566;
@@ -31,17 +24,24 @@ header {
   --alice-blue: #ebf7ff;
 }
 
+header {
+  padding: 1rem 0;
+  width: 100%;
+  background: var(--pacific-cyan, #0074c2);
+  color: var(--alice-blue, #ebf7ff);
+}
+
 .header-main {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(128, 128, 128, 0.2);
+  background: rgba(64, 146, 175, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
-  font-family: "Saira Condensed", Arial, sans-serif;
+  font-family: "saira condensed", Arial, sans-serif;
   font-size: 1.125rem;
 }
 
