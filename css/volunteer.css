@@ -71,6 +71,11 @@ header {
   letter-spacing: 1px;
 }
 
+.logo-title a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 nav {
   flex-grow: 1;
   display: flex;
