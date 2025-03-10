@@ -1,0 +1,332 @@
+/* Global Variables */
+:root {
+    --rich-black: #000814; /* Deep ocean black */
+    --yale-blue: #003566; /* Dark blue for depth */
+    --pacific-cyan: #0074c2; /* Bright cyan for water */
+    --picton-blue: #5fa8d3;
+    --alice-blue: #ebf7ff;
+
+    --success: #2ecc71; /* Seaweed-inspired green */
+    --warning: #f39c12; /* Coral-inspired orange */
+    --caution: #e67e22; /* Sunset over water */
+    --error: #d62828; /* Danger red */
+    --info: #3498db; /* Info blue */
+    --neutral: #7f8c8d; /* Rock/sand gray */
+  }
+
+
+  /* Headings */
+.mega-title {
+    font-family: "Oswald", sans-serif; /* Replaced Russo One with Oswald */
+    font-size: 10vw; /* Scales with screen width */
+    color: var(--rich-black);
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    line-height: 1;
+    text-shadow: 0.2vw 0.2vw 0.4vw var(--rich-black); /* Adds depth like water */
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem; /* 48px, still big */
+    color: var(--yale-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem; /* 32px */
+    color: var(--yale-blue);
+  }
+
+  h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem; /* 24px */
+    color: var(--yale-blue);
+  }
+
+  h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem; /* 24px */
+    color: var(--yale-blue);
+  }
+
+  h5 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem; /* 16px */
+    color: var(--yale-blue);
+  }
+
+  h6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.75rem; /* 12px */
+    color: var(--yale-blue);
+  }
+
+
+  /* Wrapper */
+.main-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+/* Header */
+header {
+    background: var(--pacific-cyan);
+    color: var(--alice-blue);
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+
+  nav {
+    background: transparent;
+    padding: 0.5rem 0;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav a {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    color: var(--alice-blue);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+  }
+
+  nav a:hover {
+    color: var(--yale-blue);
+    border-bottom: 0.15rem solid var(--yale-blue);
+  }
+
+  /* Main */
+  main {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100vw;
+    color: var(--rich-black);
+    background: var(--alice-blue); /* Light base for content */
+    text-align: left; /* Modern left-align for canvas feel */
+  }
+
+
+    /* Header */
+    .header-main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(128, 128, 128, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+    }
+
+    .header-main.scrolled {
+      background: rgba(0, 53, 102, 0.85);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.25rem 2rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-container img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--alice-blue);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    nav a {
+      position: relative;
+      font-weight: 500;
+      font-size: 1.4rem;
+      padding: 0.5rem 0;
+      color: var(--alice-blue);
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--alice-blue);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--success);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Donate Button */
+    .donate-button {
+      display: inline-block;
+      background-color: var(--pacific-cyan);
+      color: var(--alice-blue);
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 2px solid transparent;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .donate-button:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--alice-blue);
+      transition: all 0.4s ease;
+      z-index: -1;
+    }
+
+    .donate-button:hover {
+      color: var(--pacific-cyan);
+    }
+
+    .donate-button:hover:before {
+      width: 100%;
+    }
+
+    /* Modern Footer */
+    .footer-main {
+      background: var(--rich-black);
+      color: var(--alice-blue);
+      padding: 0;
+      position: relative;
+    }
+
+    /* Footer bottom section */
+    .footer-bottom {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem 4rem;
+      text-align: center;
+    }
+
+    /* Center align the Page Editor section */
+    .footer-bottom p {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+
+    /* Footer links */
+    .footer-bottom a {
+      color: var(--pacific-cyan);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--alice-blue);
+      text-decoration: underline;
+    }
+
+    /* Back to Top Button */
+    .back-to-top-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 116, 194, 0.4);
+      color: var(--alice-blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      border: 2px solid transparent;
+      overflow: hidden;
+    }
+
+    .back-to-top-button::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--alice-blue);
+      transition: all 0.4s ease;
+      z-index: -1;
+    }
+
+    .back-to-top-button:hover {
+      color: var(--pacific-cyan);
+    }
+
+    .back-to-top-button:hover::before {
+      width: 100%;
+    }
+
+    .back-to-top-button.visible {
+      opacity: 1;
+      visibility: visible;
+    }
