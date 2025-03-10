@@ -1,0 +1,452 @@
+/* Table Page Specific Styles */
+
+/* Hero Section with Ocean Background */
+#donation-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 8, 20, 0.6), rgba(0, 8, 20, 0.3)), url('../images/Dilshan/temp-img.webp');
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--alice-blue);
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #donation-hero h1 {
+    font-size: 4rem;
+    color: var(--alice-blue);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+  }
+
+  #hero-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .scroll-down-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    width: 30px;
+    height: 15px;
+  }
+
+  .scroll-down-indicator svg {
+    fill: var(--alice-blue);
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0) translateX(-50%);
+    }
+    40% {
+      transform: translateY(-10px) translateX(-50%);
+    }
+    60% {
+      transform: translateY(-5px) translateX(-50%);
+    }
+  }
+
+  /* Donation Section */
+  .donation-section {
+    padding: 4rem 2rem;
+    background-color: var(--alice-blue);
+    position: relative;
+  }
+
+  .section-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+  }
+
+  .section-tagline {
+    color: var(--pacific-cyan);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-heading {
+    color: var(--yale-blue);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--pacific-cyan);
+  }
+
+  .section-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--rich-black);
+  }
+
+  /* Table Container */
+  .table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 53, 102, 0.15);
+    background: linear-gradient(to bottom, var(--alice-blue), #f5f5f5);
+  }
+
+  /* Donation Table */
+  .donation-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: "Saira Condensed", Arial, sans-serif;
+  }
+
+  .donation-table th,
+  .donation-table td {
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    position: relative;
+  }
+
+  /* Tier Headers */
+  .tier-col {
+    min-width: 200px;
+  }
+
+  .tier-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .tier-header h3 {
+    margin-top: 0.75rem;
+    font-size: 1.4rem;
+    color: var(--rich-black);
+  }
+
+  .tier-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .fish-saver-img {
+    background-color: #5fa8d3;
+    background-image: linear-gradient(135deg, #5fa8d3, #0074c2);
+  }
+
+  .reef-protector-img {
+    background-color: #2ecc71;
+    background-image: linear-gradient(135deg, #2ecc71, #27ae60);
+  }
+
+  .ocean-guardian-img {
+    background-color: #003566;
+    background-image: linear-gradient(135deg, #003566, #001d3d);
+  }
+
+  .god-ocean-img {
+    background-color: #f39c12;
+    background-image: linear-gradient(135deg, #f39c12, #e67e22);
+  }
+
+  /* Category Labels */
+  .category-label {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: 700;
+    color: var(--yale-blue);
+    font-size: 1.1rem;
+  }
+
+  .category-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--yale-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 1rem;
+  }
+
+  .category-col {
+    width: 180px;
+  }
+
+  /* Zebra Striping for Rows */
+  .donation-table tbody tr:nth-child(odd) {
+    background-color: rgba(95, 168, 211, 0.1);
+  }
+
+  .donation-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Donation Links */
+  .donate-link {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .fish-saver {
+    background-color: #5fa8d3;
+  }
+
+  .reef-protector {
+    background-color: #2ecc71;
+  }
+
+  .ocean-guardian {
+    background-color: #003566;
+  }
+
+  .god-ocean {
+    background-color: #f39c12;
+  }
+
+  .donate-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Section Outro */
+  .section-outro {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: rgba(95, 168, 211, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-outro h3 {
+    color: var(--yale-blue);
+    margin-bottom: 1rem;
+  }
+
+  .section-outro p {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--pacific-cyan);
+    color: var(--alice-blue);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .cta-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--alice-blue);
+    transition: all 0.4s ease;
+    z-index: -1;
+  }
+
+  .cta-button:hover {
+    color: var(--pacific-cyan);
+  }
+
+  .cta-button:hover:before {
+    width: 100%;
+  }
+
+  /* Hover Effects for Table Cells */
+  .donation-table tbody td:not(.category-label) {
+    transition: all 0.3s ease;
+  }
+
+  .donation-table tbody td:not(.category-label):hover {
+    background-color: rgba(0, 53, 102, 0.1);
+    transform: scale(1.02);
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .donation-table th,
+    .donation-table td {
+      padding: 1rem;
+    }
+
+    .tier-thumbnail {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+
+    .tier-header h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #donation-hero h1 {
+      font-size: 3rem;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+    }
+
+    .donation-table {
+      font-size: 0.9rem;
+    }
+
+    .tier-thumbnail {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+
+    .category-label {
+      font-size: 1rem;
+    }
+
+    .category-icon {
+      width: 30px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .donation-section {
+      padding: 2rem 1rem;
+    }
+
+    #donation-hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .donate-link {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Tooltips for Additional Information */
+  [data-tooltip] {
+    position: relative;
+    cursor: help;
+  }
+
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--rich-black);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Animation for Table Loading */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .donation-table {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .donation-table tbody tr {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .donation-table tbody tr:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .donation-table tbody tr:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .donation-table tbody tr:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .donation-table tbody tr:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .donation-table tbody tr:nth-child(5) {
+    animation-delay: 0.5s;
+  }
