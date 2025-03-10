@@ -5,10 +5,12 @@ section li {
   list-style-type: decimal;
   border: var(--content-border);
 }
+
 * {
   line-height: 1.3;
   border-radius: 5px;
 }
+
 body > * {
   color: var(--yale-blue);
 }
@@ -44,13 +46,16 @@ aside {
 aside a {
   color: var(--picton-blue);
 }
+
 .image_container img {
   width: 100%;
 }
+
 #student-description {
   width: 100%;
   text-align: center;
 }
+
 pre {
   background-color: #e5e4e479;
   padding: 10px;
