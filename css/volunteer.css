@@ -68,7 +68,6 @@ header {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--alice-blue);
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
