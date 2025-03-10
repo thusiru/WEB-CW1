@@ -156,7 +156,7 @@ html, body {
 
   .section-heading {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
@@ -175,8 +175,9 @@ html, body {
   }
 
   .why-section p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.8;
+    font-weight: 600;
     margin-bottom: 2rem;
   }
 
@@ -192,6 +193,9 @@ html, body {
   .mission-content {
     max-width: 900px;
     margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
 
   /* Focus Areas Section */
@@ -282,46 +286,6 @@ html, body {
     margin-top: 1.5rem;
   }
 
-  /* Modern Footer */
-.footer-main {
-  background: var(--rich-black);
-  color: var(--alice-blue);
-  padding: 0;
-  position: relative;
-}
-
-/* Footer bottom section */
-.footer-bottom {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 1.5rem 4rem;
-  text-align: center;
-}
-
-/* Center align the Page Editor section */
-.footer-bottom p {
-  margin: 0.5rem 0;
-  text-align: center;
-}
-
-/* Footer links */
-.footer-bottom a {
-  color: var(--pacific-cyan);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-bottom a:hover {
-  color: var(--alice-blue);
-  text-decoration: underline;
-}
-
-/* All rights reserved - Centered at bottom */
-.rights-reserved {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: center;
-}
 
   /* Animations */
   @keyframes fadeIn {
