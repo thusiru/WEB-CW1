@@ -1,0 +1,124 @@
+section li {
+  margin-bottom: 5px;
+  background-color: var(--alice-blue);
+  padding: 10px;
+  list-style-type: decimal;
+  border: var(--content-border);
+}
+* {
+  line-height: 1.3;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+section h2 {
+  color: var(--yale-blue);
+  background-color: var(--alice-blue);
+  width: fit-content;
+  padding: 15px;
+}
+
+section h3 {
+  color: var(--yale-blue);
+  background-color: var(--alice-blue);
+  width: fit-content;
+  padding: 15px;
+}
+
+aside {
+  box-shadow: var(--box-shadow);
+}
+
+aside a {
+  color: var(--picton-blue);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 850px;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+}
+.container main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image_container {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.image_container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.top a {
+  padding: 10px 20px; /* Adds padding for button-like feel */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 20px; /* Rounds the corners */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+.navigation {
+  position: fixed;
+  background-color: #0057b3e0; /* Darker shade on hover */
+  bottom: 12%;
+  right: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 5px;
+}
+.navigation > * {
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+.navigation p {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+.navigation a {
+  margin: 4px;
+  cursor: pointer;
+}
+.navigation h4 {
+  margin: 8px;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+}

@@ -15,6 +15,198 @@ html {
   box-sizing: border-box;
 }
 
+/* Copied from Student 2 via chrome dev tools */
+header {
+  padding: 1rem 0;
+  width: 100%;
+  background: var(--pacific-cyan, #0074c2);
+  color: var(--alice-blue, #ebf7ff);
+}
+
+:root {
+  --rich-black: #000814;
+  --yale-blue: #003566;
+  --pacific-cyan: #0074c2;
+  --picton-blue: #5fa8d3;
+  --alice-blue: #ebf7ff;
+}
+
+.header-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(128, 128, 128, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  font-family: "Saira Condensed", Arial, sans-serif;
+  font-size: 1.125rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-container img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--alice-blue);
+  letter-spacing: 1px;
+}
+
+.logo-title a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  position: relative;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--alice-blue);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.4s ease-in-out;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--alice-blue);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.donate-container {
+  display: flex;
+  align-items: center;
+}
+
+.donate-button {
+  display: inline-block;
+  background-color: var(--pacific-cyan);
+  color: var(--alice-blue);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.donate-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--alice-blue);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.donate-button:hover {
+  color: var(--pacific-cyan);
+}
+
+.donate-button:hover:before {
+  width: 100%;
+}
+
+footer {
+  background: var(--rich-black, #000814);
+  color: var(--alice-blue, #ebf7ff);
+  padding: 0;
+}
+
+.footer-main {
+  position: relative;
+  font-family: "Saira Condensed", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 4rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: var(--pacific-cyan);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: var(--picton-blue);
+}
+
+.rights-reserved {
+  font-size: 0.9rem;
+  color: var(--picton-blue);
+}
+/* End of copying */
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -27,19 +219,8 @@ html {
   padding-bottom: 40px;
 }
 
-header {
-  position: absolute;
-  width: 100%;
-  background: black;
-  height: 8vh;
-}
-
-footer {
-  background: black;
-  height: 30vh;
-}
-
 #intro {
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,7 +304,7 @@ h1 {
 select {
   appearance: none;
   background-color: #e0f2ff;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>');
+  background-image: url("../images/thusiru/caret.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
@@ -439,4 +620,52 @@ h2 {
   color: #e0f2ff;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  #intro-details {
+    padding: 1.5rem 2rem;
+    margin: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #intro-details p {
+    font-size: 1rem;
+  }
+
+  #intro-btn {
+    padding: 0.8rem 1.5rem;
+  }
+
+  #programs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #sort {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #intro-details {
+    padding: 1rem 1.5rem;
+  }
+
+  .card {
+    min-width: 100%;
+  }
 }

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <meta http-equiv="refresh" content="4;url=./content/dilshan/home.html" /> -->
+    <meta http-equiv="refresh" content="4; url=./content/dilshan/home.html" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BlueGuardians</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link href="./css/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section>
@@ -14,18 +21,52 @@
         src="./content/dilshan/home.html"
         title="Home page"
         allow="fullscreen"
-        loader="lazy"
         scrolling="no"
       ></iframe>
       <div id="main">
         <div id="main-container">
           <div id="content">
-            <h1>Welcome to ......</h1>
-            <h2>sdfsfdhgsldjglsdl</h2>
-            <h3>sdlfdlgslghfdgdg</h3>
+            <h1>Welcome to BlueGuardians!</h1>
+            <div>
+              <h2>Our Mission</h2>
+              <h4>
+                At BlueGuardians, we unite passionate individuals to protect and
+                restore the ocean. Through hands-on conservation, education, and
+                advocacy, we strive to heal marine ecosystems and create a
+                sustainable future for life below water. Join us in making waves
+                for change! 🌍💙
+              </h4>
+            </div>
+            <div>
+              <h3>Group Members</h3>
+              <span>Thusiru Kodithuwakku</span>
+              <span>Dilshan D Prasanna</span>
+              <span>Nohim Hasitha</span>
+              <span>I. H. Y Damsuka</span>
+            </div>
+            <div class="loader">
+              <div class="wave-animation"></div>
+              <span>Loading BlueGuardians...</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+      setTimeout(() => {
+        const mainElement = document.querySelector("#main");
+        const iframeElement = document.querySelector(".iframe");
+
+        // Fade out the splash screen
+        mainElement.style.opacity = "0";
+        mainElement.style.transition = "opacity 0.5s ease-out";
+
+        // After fade-out, hide the splash screen and ensure iframe is fully interactive
+        setTimeout(() => {
+          mainElement.style.display = "none";
+          iframeElement.style.pointerEvents = "auto"; // Enable interaction
+        }, 500); // Match with CSS transition duration
+      }, 4000);
+    </script>
   </body>
 </html>

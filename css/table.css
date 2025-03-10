@@ -12,7 +12,7 @@
     justify-content: center;
     color: var(--alice-blue);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   #donation-hero h1 {
@@ -58,7 +58,7 @@
   /* Donation Section */
   .donation-section {
     padding: 4rem 2rem;
-    background-color: var(--alice-blue);
+    background-color: rgb(95, 168, 211, 0.4);
     position: relative;
   }
 
@@ -70,8 +70,8 @@
 
   .section-tagline {
     color: var(--pacific-cyan);
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -109,7 +109,7 @@
     overflow-x: auto;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 53, 102, 0.15);
-    background: linear-gradient(to bottom, var(--alice-blue), #f5f5f5);
+    background: linear-gradient(to bottom, var(--alice-blue), rgba(245, 245, 245, 0.8));
   }
 
   /* Donation Table */
@@ -130,7 +130,41 @@
 
   /* Tier Headers */
   .tier-col {
-    min-width: 200px;
+    width: 175px; /* Fixed column width */
+  }
+
+  /* Column background colors matching icon colors with transparency */
+  .donation-table thead th:nth-child(2) {
+    background-color: rgba(95, 168, 211, 0.4);
+  }
+
+  .donation-table thead th:nth-child(3) {
+    background-color: rgba(46, 204, 113, 0.3);
+  }
+
+  .donation-table thead th:nth-child(4) {
+    background-color: rgba(0, 53, 102, 0.3);
+  }
+
+  .donation-table thead th:nth-child(5) {
+    background-color: rgba(243, 156, 18, 0.3);
+  }
+
+  /* Semi-transparent column backgrounds */
+  .donation-table tbody td:nth-child(2) {
+    background-color: rgba(95, 168, 211, 0.2); /* Increased from 0.05 to 0.1 */
+  }
+
+  .donation-table tbody td:nth-child(3) {
+    background-color: rgba(46, 204, 113, 0.2); /* Increased from 0.05 to 0.1 */
+  }
+
+  .donation-table tbody td:nth-child(4) {
+    background-color: rgba(0, 53, 102, 0.2); /* Increased from 0.05 to 0.1 */
+  }
+
+  .donation-table tbody td:nth-child(5) {
+    background-color: rgba(243, 156, 18, 0.2); /* Increased from 0.05 to 0.1 */
   }
 
   .tier-header {
@@ -206,13 +240,13 @@
     width: 180px;
   }
 
-  /* Zebra Striping for Rows */
+  /* Zebra Striping for Rows (maintained but adjusted for transparency) */
   .donation-table tbody tr:nth-child(odd) {
     background-color: rgba(95, 168, 211, 0.1);
   }
 
   .donation-table tbody tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
   /* Donation Links */
@@ -247,25 +281,55 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 
-  /* Section Outro */
-  .section-outro {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 2rem;
-    background-color: rgba(95, 168, 211, 0.1);
-    border-radius: 8px;
+  /* Outro Section - Styled like the Why section from home page */
+  .outro-section {
+    padding: 4rem 2rem;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 8, 20, 0.8), rgba(0, 8, 20, 0.3)) , url('../images/Dilshan/deep-Sea.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Section Outro Card (glass effect) */
+  .impact-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2.5rem;
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    color: var(--alice-blue);
   }
 
-  .section-outro h3 {
-    color: var(--yale-blue);
-    margin-bottom: 1rem;
-  }
-
-  .section-outro p {
+  .impact-card h3 {
+    color: var(--alice-blue);
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .impact-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--pacific-cyan);
+  }
+
+  .impact-card p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: var(--alice-blue);
   }
 
   .cta-button {
@@ -364,6 +428,10 @@
       height: 30px;
       font-size: 0.8rem;
     }
+
+    .impact-card h3 {
+      font-size: 1.8rem;
+    }
   }
 
   @media (max-width: 576px) {
@@ -378,6 +446,10 @@
     .donate-link {
       padding: 0.4rem 0.8rem;
       font-size: 0.9rem;
+    }
+
+    .outro-section {
+      padding: 3rem 1rem;
     }
   }
 
