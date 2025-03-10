@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="4;url=./content/dilshan/home.html" />
+    <meta http-equiv="refresh" content="4; url=./content/dilshan/home.html" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BlueGuardians</title>
@@ -21,7 +21,6 @@
         src="./content/dilshan/home.html"
         title="Home page"
         allow="fullscreen"
-        loading="lazy"
         scrolling="no"
       ></iframe>
       <div id="main">
@@ -55,17 +54,17 @@
     </section>
     <script>
       setTimeout(() => {
-        const mainElement = document.querySelector('#main');
-        const iframeElement = document.querySelector('.iframe');
-        
+        const mainElement = document.querySelector("#main");
+        const iframeElement = document.querySelector(".iframe");
+
         // Fade out the splash screen
-        mainElement.style.opacity = '0';
-        mainElement.style.transition = 'opacity 0.5s ease-out';
-        
+        mainElement.style.opacity = "0";
+        mainElement.style.transition = "opacity 0.5s ease-out";
+
         // After fade-out, hide the splash screen and ensure iframe is fully interactive
         setTimeout(() => {
-          mainElement.style.display = 'none';
-          iframeElement.style.pointerEvents = 'auto'; // Enable interaction
+          mainElement.style.display = "none";
+          iframeElement.style.pointerEvents = "auto"; // Enable interaction
         }, 500); // Match with CSS transition duration
       }, 4000);
     </script>
