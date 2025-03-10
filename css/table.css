@@ -112,6 +112,15 @@
     background: linear-gradient(to bottom, var(--alice-blue), rgba(245, 245, 245, 0.8));
   }
 
+  .tier-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000814;
+    margin-top: 10px;
+  }
+
   /* Donation Table */
   .donation-table {
     width: 100%;
