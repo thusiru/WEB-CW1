@@ -106,7 +106,7 @@ header {
   width: 100%;
 }
 
-/* Navigation */
+
 nav {
   background: transparent;
   padding: 0.5rem 0;
@@ -117,7 +117,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem; /* Space between links */
+  gap: 1rem;
 }
 
 nav ul li {
