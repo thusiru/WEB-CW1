@@ -7,6 +7,12 @@ html, body {
     overflow-x: hidden;
   }
 
+  /*Logo Link */
+  .logo-link {
+    text-decoration: none;
+  }
+
+
   /* Common Section Styling */
   section {
     position: relative;
@@ -453,4 +459,10 @@ html, body {
     .cta-button {
       width: 100%;
     }
+  }
+
+  .ST2-links{
+    color: var(--alice-blue);
+    font-size: 1.25rem;
+    font-weight: 700;
   }

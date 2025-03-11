@@ -162,6 +162,11 @@ main {
     transition: all 0.4s ease;
   }
 
+    /*Logo Link */
+    .logo-link {
+      text-decoration: none;
+    }
+
   .header-main.scrolled {
     background: rgba(0, 53, 102, 0.85);
   }
@@ -189,7 +194,6 @@ main {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--alice-blue);
-    text-transform: uppercase;
     letter-spacing: 1px;
   }
 

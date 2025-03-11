@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Editor - Dilshan D Prasanna</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../../../../images/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Saira+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
@@ -19,38 +15,50 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/editor_ST2.css" />
+    <link rel="stylesheet" href="../../css/pageEditor_ST2.css" />
+    <script src="../../js/home.js" defer></script>
   </head>
   <body>
     <div class="main-wrapper">
-      <!-- Fixed Transparent Header -->
-      <header class="header-main">
-        <div class="nav-wrapper">
-          <div class="logo-container">
-            <img
-              src="../../images/logo.webp"
-              alt="Life Below Water Logo"
-            />
-            <span class="logo-title">SDG 14</span>
-          </div>
-
+      <!-- Normal Header -->
+      <header class="site-header">
+        <div class="header-container">
           <nav aria-label="Main Navigation">
-            <ul>
-              <li><a href="../../../../home.html">Home</a></li>
-              <li><a href="../../../thusiru/volunteer.html">Volunteer</a></li>
-              <li><a href="../../../profile.html">User Profile</a></li>
-              <li><a href="../../../nohim/feedback.html">Feedback</a></li>
-              <li><a href="../../../yugeeth/sitemap.html">Sitemap</a></li>
-              <li><a href="../../../nohim/team.html">Team</a></li>
-            </ul>
+            <div class="menu-items">
+              <button class="menu-button" onclick="location.href='./home.html'">
+                Home Page
+              </button>
+              <button
+                class="menu-button"
+                onclick="location.href='./table.html'"
+              >
+                Table Page
+              </button>
+              <button
+                class="menu-button"
+                onclick="location.href='./content_ST2.html'"
+              >
+                Content Page
+              </button>
+              <button class="menu-button current" onclick="location.href='#'">
+                Page Editor
+              </button>
+              <button
+                class="menu-button"
+                onclick="location.href='./validation_ST2.html'"
+              >
+                Validation Page
+              </button>
+              <button
+                class="menu-button"
+                onclick="location.href='../../template.html'"
+              >
+                Template
+              </button>
+            </div>
           </nav>
-
-          <div class="donate-container">
-            <a href="../../../../table.html" class="donate-button">Donate Us</a>
-          </div>
         </div>
       </header>
-
       <main>
         <div class="report-container">
           <div class="report-header">
@@ -62,15 +70,21 @@
             <h2>1. Personal Details and Role</h2>
             <div class="section-content">
               <p>
-                <strong>Name and Role:</strong> I am Dilshan D Prasanna, Student
-                2 in Level 4 Group 10, Web Group G, enrolled in the module
-                4COSC011C.2 Web Design and Development (IIT ID: 20240194, UoW
-                ID: w2119857). My role was to design and develop critical pages
-                for our group's website themed around Sustainable Development
-                Goal 14 – Life Below Water. I focused on creating visually
-                engaging, user-friendly pages that educate and inspire action
-                for ocean conservation, contributing to both the aesthetic and
-                functional aspects of the site.
+                <br />
+                <span class="opn-title">Name:</span> Dilshan D Prasanna <br />
+                <span class="opn-title">Role:</span> Student 2 in Level 4
+                Group10 <br />
+                <span class="opn-title">Web Group:</span> G<br />
+                <span class="opn-title">Module:</span> 4COSC011C.2 Web Design
+                and Development <br /><span class="opn-title">IIT ID:</span>
+                20240194 <br />
+                <span class="opn-title">UoW ID:</span> w2119857 <br />
+                <span class="opn-title">Responsibilities:</span> Designed and
+                developed critical pages for our group's website themed around
+                Sustainable Development Goal 14 – Life Below Water. Focused on
+                creating visually engaging, user-friendly pages that educate and
+                inspire action for ocean conservation, contributing to both the
+                aesthetic and functional aspects of the site.
               </p>
 
               <p>
@@ -80,10 +94,20 @@
               <ul class="page-list">
                 <li>
                   <a
-                    href="../../../../home.html"
+                    href="../../template.html"
                     target="_blank"
                     class="page-link"
                   >
+                    <i class="fas fa-file-code"></i> Template.html with
+                    Global.css
+                  </a>
+                  <p>
+                    The foundational template for all pages with global styling
+                    guidelines.
+                  </p>
+                </li>
+                <li>
+                  <a href="./home.html" target="_blank" class="page-link">
                     <i class="fas fa-home"></i> Home.html with Home.css
                   </a>
                   <p>
@@ -92,11 +116,7 @@
                   </p>
                 </li>
                 <li>
-                  <a
-                    href="../../../../table.html"
-                    target="_blank"
-                    class="page-link"
-                  >
+                  <a href="./table.html" target="_blank" class="page-link">
                     <i class="fas fa-table"></i> Table.html with Table.css
                   </a>
                   <p>
@@ -106,7 +126,7 @@
                 </li>
                 <li>
                   <a
-                    href="../../../../content_ST2.html"
+                    href="./content_ST2.html"
                     target="_blank"
                     class="page-link"
                   >
@@ -128,14 +148,11 @@
             <div class="section-content">
               <div class="page-preview">
                 <img
-                  src="../../../../images/Dilshan/home-preview.jpg"
+                  src="../../images/Dilshan/home-preview.png"
                   alt="Home page preview"
                   class="preview-image"
                 />
-                <a
-                  href="../../../../home.html"
-                  target="_blank"
-                  class="view-button"
+                <a href="./home.html" target="_blank" class="view-button"
                   >View Page</a
                 >
               </div>
@@ -234,14 +251,11 @@
             <div class="section-content">
               <div class="page-preview">
                 <img
-                  src="../../../../images/Dilshan/table-preview.jpg"
+                  src="../../images/Dilshan/table-preview.png"
                   alt="Donation table page preview"
                   class="preview-image"
                 />
-                <a
-                  href="../../../../table.html"
-                  target="_blank"
-                  class="view-button"
+                <a href="./table.html" target="_blank" class="view-button"
                   >View Page</a
                 >
               </div>
@@ -334,14 +348,11 @@
             <div class="section-content">
               <div class="page-preview">
                 <img
-                  src="../../../../images/Dilshan/content-preview.jpg"
+                  src="../../images/Dilshan/content-preview.png"
                   alt="Content page preview"
                   class="preview-image"
                 />
-                <a
-                  href="../../../../content_ST2.html"
-                  target="_blank"
-                  class="view-button"
+                <a href="./content_ST2.html" target="_blank" class="view-button"
                   >View Page</a
                 >
               </div>
@@ -441,26 +452,15 @@
               <div class="challenge-container">
                 <h3>Challenges:</h3>
                 <div class="challenge-item">
-                  <i class="fas fa-video challenge-icon"></i>
+                  <i class="fas fa-code-branch challenge-icon"></i>
                   <div class="challenge-content">
-                    <h4>Video Performance (Content_ST2.html)</h4>
+                    <h4>Git Repository Management</h4>
                     <p>
-                      The initial video file size slowed page loading. I
-                      compressed ocean.mp4 to 5MB and used preload="auto" to
-                      optimize performance, testing across browsers.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="challenge-item">
-                  <i class="fas fa-mobile-alt challenge-icon"></i>
-                  <div class="challenge-content">
-                    <h4>Table Responsiveness (Table.html)</h4>
-                    <p>
-                      On mobile, the table overflowed. I added overflow-x: auto
-                      to .table-container and adjusted padding and font-size in
-                      media queries (e.g., @media (max-width: 576px)), ensuring
-                      readability.
+                      I accidentally deleted the Git repository history and half
+                      of the project files by using an incorrect command. This
+                      required recreating several files and rebuilding parts of
+                      the project structure while ensuring consistency with
+                      other team members' work.
                     </p>
                   </div>
                 </div>
@@ -495,8 +495,9 @@
                 <h3>Lessons Learned:</h3>
                 <ul>
                   <li>
-                    Preloading and compressing media significantly boosts
-                    performance, as seen with the video background.
+                    Always double-check Git commands before execution and create
+                    backups of critical files before making significant
+                    repository changes.
                   </li>
                   <li>
                     Early responsive testing prevents layout issues,
@@ -683,12 +684,14 @@
 
               <div class="reference-item">
                 <p>
-                  Smith, J. (2022). <em>Mastering Glassmorphism in CSS</em>.
-                  Available at:
+                  Smoljames.
+                  <em>
+                    HTML & CSS Full Course | Web Development for Beginners </em
+                  >. Available at:
                   <a
-                    href="https://example.com/glassmorphism-tutorial"
+                    href="https://www.youtube.com/watch?v=Eb3lOiukwAQ&t=20027s"
                     target="_blank"
-                    >https://example.com/glassmorphism-tutorial</a
+                    >https://www.youtube.com/watch?v=Eb3lOiukwAQ&t=20027s</a
                   >
                 </p>
               </div>
@@ -740,7 +743,7 @@
 
           <div class="validation-button-container">
             <a
-              href="../validations.html"
+              href="./validation_ST2.html"
               class="validation-button"
               target="_blank"
             >
@@ -755,17 +758,17 @@
         <div class="footer-bottom">
           <p>
             Page Editor:
-            <a href="../../../dilshan/editor_ST1.html">Student 1</a> |
-            <a href="./editor_ST2.html">Student 2</a> |
-            <a href="../../../thusiru/editor_ST3.html">Student 3</a> |
-            <a href="../../../yugeeth/editor_ST4.html">Student 4</a>
+            <a href="../thusiru/pageEditor_ST1.html">Student 1</a> |
+            <a href="../dilshan/page-editor_ST2.html">Student 2</a> |
+            <a href="../nohim/pageEditor_ST3.html">Student 3</a> |
+            <a href="../yugeeth/">Student 4</a>
           </p>
-          <p>
-            <a href="../validations.html">Validation</a> |
-            <a href="../../../accessibility.html">Accessibility Compliance</a>
+          <p class="ST2-links">
+            <a href="./validation_ST2.html">Student 2 Validation</a> |
+            <a href="./page-editor_ST2.html">Student 2 Page Editor</a>
           </p>
           <p class="rights-reserved">
-            © 2023 Life Below Water. All rights reserved.
+            © 2025 BlueGuardians. All rights reserved.
           </p>
         </div>
 
@@ -780,26 +783,25 @@
         </a>
       </footer>
     </div>
-
     <script>
       // Back to top button functionality
       document.addEventListener("DOMContentLoaded", function () {
-        var backToTopButton = document.getElementById("back-to-top");
+        const backToTopButton = document.getElementById("back-to-top");
 
-        window.onscroll = function () {
-          if (
-            document.body.scrollTop > 300 ||
-            document.documentElement.scrollTop > 300
-          ) {
-            backToTopButton.style.display = "block";
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("visible");
           } else {
-            backToTopButton.style.display = "none";
+            backToTopButton.classList.remove("visible");
           }
-        };
+        });
 
         backToTopButton.addEventListener("click", function (e) {
           e.preventDefault();
-          window.scrollTo({ top: 0, behavior: "smooth" });
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         });
       });
     </script>
