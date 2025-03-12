@@ -4,29 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base Template</title>
-    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="/css/global_nohim.css" />
     <link rel="stylesheet" href="../../css/pageEditor_validator.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Life Below Water</h1>
-        <nav aria-label="Main Navigation">
-          <ul>
-            <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="profile.html">User Profile</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="team.html">Team</a></li>
-          </ul>
-        </nav>
+      <header class="header-main">
+        <div class="nav-wrapper">
+          <div class="logo-container">
+            <a href="./home.html" class="logo-link">
+              <img src="../../images/logo.webp" alt="Life Below Water Logo" />
+              <span class="logo-title">BlueGuardians </span>
+            </a>
+          </div>
+
+          <nav aria-label="Main Navigation">
+            <ul>
+              <li><a href="./home.html" aria-current="page">Home</a></li>
+              <li><a href="../thusiru/volunteer.html">Volunteer</a></li>
+              <li><a href="content/profile.html">User Profile</a></li>
+              <li><a href="../nohim/feedback.html">Feedback</a></li>
+              <li><a href="../yugeeth/sitemap.html">Sitemap</a></li>
+              <li><a href="../nohim/team.html">Team</a></li>
+            </ul>
+          </nav>
+
+          <div class="donate-container">
+            <a href="./table.html" class="donate-button">Donate Us</a>
+          </div>
+        </div>
       </header>
       <main>
        <div class="container">
         <!-- Main content area -->
-        <main>
+        <main class="main-wrapper-1">
 
             <!-- Update the content of the following sections with the information that corresponds to the pages you implemented  -->
 
@@ -102,19 +114,34 @@
         </aside>
     </div>
   </main>
-      <footer>
-        <p>&copy; All rights reserved.</p>
-        <p>
-          Page Editor: <a href="pageEditor_ST1.html">Student 1</a> |
-          <a href="pageEditor_ST2.html">Student 2</a> |
-          <a href="pageEditor_ST3.html">Student 3</a> |
-          <a href="pageEditor_ST4.html">Student 4</a>
-        </p>
-        <p>
-          <a href="validation.html">Validation</a> |
-          <a href="accessibility.html">Accessibility Compliance</a>
-        </p>
-      </footer>
+  <footer class="footer-main">
+    <div class="footer-bottom">
+      <p>
+        Page Editor:
+        <a href="../thusiru/pageEditor_ST1.html">Student 1</a> |
+        <a href="../dilshan/page-editor_ST2.html">Student 2</a> |
+        <a href="../nohim/pageEditor_ST3.html">Student 3</a> |
+        <a href="../yugeeth/">Student 4</a>
+      </p>
+      <p class="ST2-links">
+        <a href="./validation_ST2.html">Student 2 Validation</a> |
+        <a href="./page-editor_ST2.html">Student 2 Page Editor</a>
+      </p>
+      <p class="rights-reserved">
+        © 2025 BlueGuardians. All rights reserved.
+      </p>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a
+      href="#"
+      id="back-to-top"
+      class="back-to-top-button"
+      aria-label="Back to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
     </div>
   </body>
 </html>

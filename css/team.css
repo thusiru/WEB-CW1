@@ -7,6 +7,7 @@
 }
 
 .team-member {
+
   width: 280px;
   height: max-content;
   margin: 15px;
@@ -64,6 +65,7 @@
   /* background-color: #16aeb377; */
 }
 
+
 .visible {
   visibility: visible;
 }
@@ -77,4 +79,12 @@
 }
 .editor-page-button:hover {
   background-color: paleturquoise;
+}
+
+.member-name{
+  font-size: 1.4rem;
+}
+
+.team-member-title{
+  text-align: center;
 }

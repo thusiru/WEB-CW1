@@ -12,6 +12,9 @@ section li {
 body > * {
   color: var(--yale-blue);
 }
+body{
+  background: none;
+  background-color: #fff !important}
 
 html {
   scroll-behavior: smooth;
@@ -39,11 +42,24 @@ section h3 {
 
 aside {
   box-shadow: var(--box-shadow);
+  padding: 50px;
+}
+aside li{
+
 }
 
 aside a {
   color: var(--picton-blue);
+  margin-bottom: 10px;
 }
-.image_container img {
-  width: 100%;
+
+.main-wrapper{
+  background-color: var(--white);
+}
+.container{
+  background-color: var(--white);
+}
+
+main{
+  background: none;
 }

@@ -19,8 +19,8 @@
 /* Reset */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 /* Body */
@@ -33,9 +33,9 @@ body {
     to bottom,
     var(--alice-blue),
     var(--picton-blue)
-  ); /* Fluid watery gradient */
+  ); /* Fluid watery gradient
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 }
 
 /* Headings */
