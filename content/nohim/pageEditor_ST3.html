@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base Template</title>
+    <title>Student 3 page editor</title>
     <link rel="stylesheet" href="../../css/global_nohim.css" />
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/pageEditor_validator.css" />
     <link rel="stylesheet" href="../../css/pageEditor_ST3.css">
+    <link rel="icon" type="image/png" href="../../images/logo.webp">
+
   </head>
   <body>
       <header class="header-main">
@@ -21,12 +23,12 @@
 
           <nav aria-label="Main Navigation">
             <ul>
-              <li><a href="./home.html" aria-current="page">Home</a></li>
-              <li><a href="../thusiru/volunteer.html">Volunteer</a></li>
-              <li><a href="content/profile.html">User Profile</a></li>
-              <li><a href="../nohim/feedback.html">Feedback</a></li>
-              <li><a href="../yugeeth/sitemap.html">Sitemap</a></li>
-              <li><a href="../nohim/team.html">Team</a></li>
+              <li><a href="../../content/dilshan/home.html" aria-current="page">Home</a></li>
+              <li><a href="../../content/thusiru/volunteer.html">Volunteer</a></li>
+              <li><a href="../../content/profile.html">User Profile</a></li>
+              <li><a href="../../content/nohim/feedback.html">Feedback</a></li>
+              <li><a href=".../../content/yugeeth/sitemap.html">Sitemap</a></li>
+              <li><a href="../../content/nohim/team.html">Team</a></li>
             </ul>
           </nav>
 
@@ -36,19 +38,20 @@
         </div>
       </header>
 
-      <main class="main-wrapper-nohim">
+      <main class="main-wrapper">
         <div class="container">
           <!-- Main content area -->
           <main>
             <!-- Update those first three sections for the pages you were responsible to implement -->
-
             <section id="team_editor">
+              <h2 id="student-description">Nohim Hasitha - Student(3)</h2>
+
               <h2 id="splash">Team Page</h2>
               <h3>Technical Description</h3>
-              <div class="image_container"><img src="../../content/nohim/pageEditorSnapshots/teamSnapshot.png" alt=""></div>
+              <div class="image_container"><img src="../../content/nohim/pageEditorSnapshots/teamSnapshot.png" alt="Team page snapshot"></div>
             
               <p>
-                The Team page is mainly consist of the standard html tags including header,footer for accessibility and head and body for implementing the page. the head contains link to relevent css files and javascript files. i have used the javascript file as asynchornus meaning that javascript will load regardless of whether the page has been already loaded or not. which is essential for functioning. the body tag consist of mainly this structure.
+                The Team page is mainly consist of the standard html tags including header,footer for accessibility and head and body for implementing the page. the head contains link to relevent css files and javascript files. the body mainly consist of header, main and a footer. inside the main container each of the student details are divided into distinct div elements and are clearly identified by id attribute for easier access. each of these team member cards are expandable when user hovers over it. the use of css styling ensures that the content is easier to access while maintaining a satisfactory user experience. 
                 <pre>
                   &lt;body&gt;
                       &lt;header&gt;...&lt;/header&gt;
@@ -82,16 +85,15 @@
               <!-- Update the path to link the Page Editor with the splash page -->
               <p> 
                 <a href="../../content/nohim/validation_ST3.html#team_validation"
-                  >Include a link to the validation page</a
-                >, use the marker to jump to the corresponding section of the
-                validation page.
+                  >Click here to go back to the validation page</a
+                >
               </p>
               <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
               <h3>Link to the page</h3>
               <p>
                 <a href="./team.html"
-                  >Include a link to the actual page you describe.</a
+                  >Go to team page</a
                 >
               </p>
             </section>
@@ -99,11 +101,11 @@
             <section id="feedback_editor">
               <h2 id="volunteer">Feedback Page</h2>
               <h3>Technical Description</h3>
-              <div class="image_container">  <img src="../../content/nohim/pageEditorSnapshots/FeedbackSnapshot.png" alt=""></div>
+              <div class="image_container">  <img src="../../content/nohim/pageEditorSnapshots/FeedbackSnapshot.png" alt="feedback page snapshot"></div>
             
 
               <p>
-                The feedback page is mainly consist of head and body which is a crucial part of standard html doucument. inside the head tag theare are relevent css files for proper styling. and inside the body tag there are mainly header,main and footer which is easy to understand and navigate. inside the main tag there is a secondary div tag with the class container for proper alignment. the form is placed inside this tag. the form consist of different inputs and labels to enhance user feedback. the feedback page use this structure.
+                The feedback page is mainly consist of head and body which is a crucial part of standard html doucument. inside the head tag theare are relevent css files for proper styling. and inside the body tag there are mainly header,main and footer which is easy to understand and navigate. inside the main tag there is a secondary div tag with the class container for proper alignment. the form is placed inside this tag. the form consist of different inputs and labels to enhance user feedback. the feedback page use this structure. each of the sections inside the form elements are clearly grouped by using fieldset tag, which consist of legend and other div elements as well as input fields with their unique id's. user's with disabilities can easily identify the content using the aria-describedby or alt tags. for easier submission dates of the submission is auto generated.
                 <pre>
                   &lt;body&gt;
                       &lt;header&gt;...&lt;/header&gt;
@@ -133,16 +135,15 @@
               <!-- Update the path to link the Page Editor with the splash page -->
               <p>
                 <a href="../../content/nohim/validation_ST3.html#feedback_validation"
-                  >Include a link to the validation page</a
-                >, use the marker to jump to the corresponding section of the
-                validation page.
+                  >Click here to go back to the validation page</a
+                >
               </p>
               <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
               <h3>Link to the page</h3>
               <p>
                 <a href="./feedback.html"
-                  >Include a link to the actual page you describe.</a
+                  >Go to feedback page</a
                 >
               </p>
             </section>
@@ -151,57 +152,80 @@
               <h2 id="content">Content Page</h2>
               <h3>Technical Description</h3>
               <div class="image_container">
-                <img src="../../content/nohim/pageEditorSnapshots/contentSnapshot.png" alt="">
+                <img src="../../content/nohim/pageEditorSnapshots/contentSnapshot.png" alt="Content page snapshot">
               </div>
               <p>
-                Explain the HTML and CSS techniques used to implement this page.
-                Justify the logic and purpose of the key tags and styling
-                choices focusing on functionality and design without copying
-                large code sections. Explain the purpose of key HTML tags and
-                CSS properties. Specify key HTML tags and CSS properties used to
-                create structure and styling.
+               I have created this webpage to showcase the content of my main topic life under water. the html file is mainly consist of head,body and footer and inside the body there is a main tag where i implemented all the sections that are visible in the page. and i have specially use sections to divide and indicate which section corresponds to which part of the webpage. i have use css styling to highlight header,subtitle and list elements to clearly indicate the content and for  the ease of navigation.
               </p>
 
               <h3>Accessibility</h3>
               <p>
-                Explain how you used to addressed accessibility in this
-                particular page you implemented.
+                <p>In the page I implemented, accessibility is addressed in the following ways:</p>
+
+                <ul>
+                  <li><strong>Semantic HTML Tags</strong>: I used <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to structure the page, making it easier for screen readers to understand the layout.</li>
+                  
+                  <li><strong>&#39;aria-label&#39;</strong>: The <code>&lt;nav&gt;</code> tag includes an <code>aria-label="Main Navigation"</code>, which helps screen readers identify the purpose of the navigation section.</li>
+                
+                  <li><strong>Alternative Text for Images</strong>: I added <code>alt</code> attributes to the <code>&lt;img&gt;</code> tags to provide text descriptions of the images for users who are visually impaired.</li>
+                
+                  <li><strong>Consise organizing</strong>: I used containers and wrappers to properly align the content in the center of the page while maintaining the flexibility for a wide range of devices. i used sections and divs to properly align and organize the html page for better user experiance</li>
+                </ul>
+                
+                <p>These elements ensure the page is more accessible for users with disabilities, improving navigation and understanding.</p>
+                
               </p>
 
               <h3>Link to the validation page</h3>
               <!-- Update the path to link the Page Editor with the splash page -->
               <p>
                 <a href="./validation_ST3.html#content_validation"
-                  >Include a link to the validation page</a
-                >, use the marker to jump to the corresponding section of the
-                validation page.
+                  >Click here to go back to the validation page</a
+                >
               </p>
               <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
               <h3>Link to the page</h3>
               <p>
                 <a href="./content_ST3.html"
-                  >Include a link to the actual page you describe.</a
+                  >Go to content page</a
                 >
               </p>
             </section>
 
             <section>
               <h2 id="challenge">Challenges and Lessons Learned</h2>
-              <p>
-                Detail any challenges encountered during the implementation
-                process and explain how they were resolved. Reflect on the
-                lessons learned from overcoming these challenges.
-              </p>
+              <h3>Challenges</h3>
+              <ul>
+             <li>I have encountered many problems while coding the website specially for feedback and teampage</li>
+             <li>One of the main problems i am having was to align the content center vertically and horizontally </li>
+             <li>I was having problem while making sure my main content which is under the main tag remain at aa specific height so it doesnt take less height when there is not enough content on the webpage</li>  
+            <li>I was struggling to make my emojis on the feedback form to interact while also keeping the functionality of the radio button which it is based on.</li>
+              </ul>
+              <h3>Lessons learned</h3>
+              <ul>
+                <li>I have learnt to use the css properties like min width and max width to properly align my content with the window size.</li>
+                <li>I also learnt how to apply css rules specifically for mobile based devices.</li>
+                <li>other important thing i learnt is that to use javascript properly for further interactivity of the webpage specificlly for feedback page</li>
+                <li>I learnt to use css variable which is specified in the root property in the css, which is effective for maintaining the consistent appearance throughout the webpage.</li>
+              </ul>
+              
             </section>
 
             <section>
               <h2 id="compliance">Compliance</h2>
-              <p>
-                Discuss how the pages you have created are compliant with Janet
-                regulations governing web page publication. This includes
-                demonstrating your understanding and application of these
-                regulations. Be realistic and truthful.
+              <h3>What is JANET regulation?</h3>
+              <P>JANET regulations refer to the rules and guidelines set by JANET (Joint Academic Network), a network that provides internet and IT services to UK universities, colleges, and research institutions. The network is managed by Jisc, a non-profit organization supporting higher education and research in the UK.
+              <p> 
+                <h3>How this site complies?</h3>
+                <p>This site complies with the JANET rules and regulation by following these guidelines. this ensures that this site strictly adhere to JANET policies while maintaining a consistent layout.</p>
+                <ul><li>
+                  Acceptable Use Policy (AUP) Compliance - The website makes sure that all activities and content comply with JANET's AUP, preventing abuse such unlawful activity, offensive content, or unapproved system access.  
+                </li>
+              <li>Data Protection and Security - To protect user data, the website adheres to JANET security rules and GDPR by utilizing secure authentication, robust encryption, and appropriate data processing procedures.  </li>
+              <li>Content Filtering and Monitoring - The website keeps the required records and applies the proper content filtering to stop access to harmful or unlawful contents.</li>
+              </ul>
+                
               </p>
             </section>
 
@@ -213,14 +237,12 @@
               </p>
               <ul class="ref">
                 <li>
-                  iStock (2025) <i>iStock.</i> Available at:
-                  <a href="#">https://www.istockphoto.com/</a> (Last accessed:
-                  11 Feb 2025).
+                  cbbd33a8-ef31-47b0-807d-6ec97be3eab2 (240×180). (no date). Available from https://cdn.productreview.com.au/resize/review-attachment/cbbd33a8-ef31-47b0-807d-6ec97be3eab2?cover=true&height=180&v=2&width=240 [Accessed 9 March 2025].
+
                 </li>
                 <li>
-                  Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i
-                    >John Willey&Sons. Inc. Indianappolis.</i
-                  >
+                  cbbd33a8-ef31-47b0-807d-6ec97be3eab2 (240×180). (no date). Available from https://cdn.productreview.com.au/resize/review-attachment/cbbd33a8-ef31-47b0-807d-6ec97be3eab2?cover=true&height=180&v=2&width=240 [Accessed 9 March 2025].
+
                 </li>
               </ul>
             </section>

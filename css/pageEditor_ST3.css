@@ -12,9 +12,10 @@ section li {
 body > * {
   color: var(--yale-blue);
 }
-body{
+body {
   background: none;
-  background-color: #fff !important}
+  background-color: #fff !important;
+}
 
 html {
   scroll-behavior: smooth;
@@ -44,8 +45,7 @@ aside {
   box-shadow: var(--box-shadow);
   padding: 50px;
 }
-aside li{
-
+aside li {
 }
 
 aside a {
@@ -53,13 +53,26 @@ aside a {
   margin-bottom: 10px;
 }
 
-.main-wrapper{
+.main-wrapper {
   background-color: var(--white);
 }
-.container{
+.container {
   background-color: var(--white);
 }
 
-main{
+main {
   background: none;
+}
+
+section a {
+  color: inherit;
+  background-color: #ebffd9;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #5fb00f75;
+  border-width: 2px;
+}
+section a:hover {
+  filter: brightness(0.9);
 }
