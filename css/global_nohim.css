@@ -35,7 +35,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Open sans";
+  /* font-family: "Open sans"; */
 }
 p {
   line-height: 1.4;
@@ -53,28 +53,33 @@ body {
   margin: 0;
   height: 100vh;
   overflow-y: scroll;
-  background: none
-  !important
-
+  /* overflow-x: hidden; */
+  background: none !important;
+  /* width: 100vw; */
 }
-h1{
-    font-size: 2.2rem !important;
-    font-weight: 300;
+h1 {
+  font-size: 2.2rem !important;
+  font-weight: 300;
 }
-main{
-    background: none !important;
+main {
+  background: none !important;
 }
 .main-wrapper-1 {
   min-height: 100vh;
   overflow: hidden;
+  width: 100%;
   /* margin-top: 200px; */
 }
-.body >*{
-    background: none;
+.body > * {
+  background: none;
 }
 
-.container{
-    background: none;
+.container {
+  background: none;
+}
+
+.team-member-section  {
+    text-align: center;
 }
 
 /* header,
@@ -113,14 +118,18 @@ nav a:hover {
   color: var(--yale-blue);
 }
 
-main{
+main {
   min-height: 100vh;
-  margin: 30px;
-  margin-top: 127.84px;
+  /* margin: 30px; */
+  /* margin-top: 127.84px; */
 }
 
 @media (max-width: 800px) {
   aside {
     display: none;
   }
+}
+header {
+  position: relative !important;
+  background-color: var(--info) !important;
 }
