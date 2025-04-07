@@ -71,3 +71,15 @@ img {
   width: 90%;
 }
 
+section a {
+  color: inherit;
+  background-color: #ebffd9;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #5fb00f75;
+  border-width: 2px;
+}
+section a:hover {
+  filter: brightness(0.9);
+}
