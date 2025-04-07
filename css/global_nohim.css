@@ -132,5 +132,5 @@ main {
 }
 header {
   position: relative !important;
-  background-color: var(--info) !important;
+/*   background-color: var(--info) !important; */
 }
