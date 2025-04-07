@@ -12,6 +12,10 @@ section li {
 body > * {
   color: var(--yale-blue);
 }
+body {
+  background: none;
+  background-color: #fff !important;
+}
 
 html {
   scroll-behavior: smooth;
@@ -39,11 +43,36 @@ section h3 {
 
 aside {
   box-shadow: var(--box-shadow);
+  padding: 50px;
+}
+aside li {
 }
 
 aside a {
   color: var(--picton-blue);
+  margin-bottom: 10px;
 }
-.image_container img {
-  width: 100%;
+
+.main-wrapper {
+  background-color: var(--white);
+}
+.container {
+  background-color: var(--white);
+}
+
+main {
+  background: none;
+}
+
+section a {
+  color: inherit;
+  background-color: #ebffd9;
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #5fb00f75;
+  border-width: 2px;
+}
+section a:hover {
+  filter: brightness(0.9);
 }
