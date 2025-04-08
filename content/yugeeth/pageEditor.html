@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor 04 - Yugeeth Damsuka</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <h1>Life Under The Water</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            background-image: url('edit.jpg');
+            background-size: <100>;
+            background-position: <justify>;
+            background-repeat: no-repeat;
+        }
+
+        ul{
+            font-family: "Times New Roman", Times, serif;
+                font-size: 30px; /* Adjust as needed */
+                font-weight: bold;
+                background-color: #1d83c3; /* Blue background */
+                color: rgb(242, 235, 235); /* White text */
+                padding: 20px;
+                text-align: center;
+        }
+        h1{
+            font-family: "Times New Roman", Times, serif;
+                font-size: 24px; /* Adjust as needed */
+                font-weight: bold;
+                background-color: #1d83c3; /* Blue background */
+                color: rgb(242, 235, 235); /* White text */
+                padding: 10px;
+                text-align: center;
+
+        }
+    </style>
+
+    <section class="stud">
+        <h2>Yugeeth Damsuka, student 04</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="profile.html">profile page</h2>
+                    <h3>Technical Description</h3>
+                        <p>HTML Structure:<br><br>
+
+                            Uses the <code>&lt;!DOCTYPE html&gt;</code> declaration to ensure proper document rendering.<br><br>
+                            
+                            <code>&lt;head&gt;</code> contains meta tags for character encoding (UTF-8) and viewport settings for mobile responsiveness.<br><br>
+                            
+                            The <code>&lt;title&gt;</code> element defines the page title as "User Profile - Life Under the Water".<br><br>
+                            
+                            A <code>&lt;link&gt;</code> element connects to an external CSS file (style.css).<br><br>
+                            
+                            Inline <code>&lt;style&gt;</code> elements define specific styling for headers and navigation.<br><br>
+                            
+                            The <code>&lt;body&gt;</code> consists of a header, navigation, user profile, goals, skills, availability, contact form, and footer.<br><br>
+                            
+                            <strong>Navigation (<code>&lt;nav&gt;</code>)</strong><br><br>
+                            
+                            A semantic <code>&lt;nav&gt;</code> element provides structured navigation for users.<br><br>
+                            
+                            The <code>aria-label="Main Navigation"</code> improves screen reader accessibility.<br><br>
+                            
+                            Unordered lists (<code>&lt;ul&gt;</code>) ensure a structured format for navigation items.<br><br>
+                            
+                            <strong>User Profile Section</strong><br><br>
+                            
+                            Uses a <code>&lt;div&gt;</code> container with the <code>profile-header</code> class for a structured layout.<br><br>
+                            
+                            An <code>&lt;img&gt;</code> tag is used to display the profile picture with alternative text (<code>alt="Profile"</code>).<br><br>
+                            
+                            Profile details are contained within <code>&lt;div class="profile-info"&gt;</code>, including name, role, and location.<br><br>
+                            
+                            <strong>Skills Section</strong><br><br>
+                            
+                            Uses progress bars (<code>.progress-bar-fill</code>) to visually represent skill levels.<br><br>
+                            
+                            CSS animations (<code>transition: width 0.3s;</code>) ensure smooth progression effects.<br><br>
+                            
+                            <strong>Goals & Experience</strong><br><br>
+                            
+                            Uses unordered lists (<code>&lt;ul&gt;</code>) to list goals and experiences in a structured manner.<br><br>
+                            
+                            Ensures a clean and readable layout with adequate spacing.<br><br>
+                            
+                            <strong>UN Goals Support</strong><br><br>
+                            
+                            Displays the United Nations’ Sustainable Development Goals (SDGs) using a grid layout.<br><br>
+                            
+                            Hover effects (<code>.un-goal:hover</code>) enhance user interaction.<br><br>
+                            
+                            <strong>Availability Calendar</strong><br><br>
+                            
+                            A semantic <code>&lt;table&gt;</code> with headers (<code>&lt;th&gt;</code>) and properly structured rows (<code>&lt;tr&gt;</code>).<br><br>
+                            
+                            Uses CSS styling (<code>.available { color: #059669; }</code>) to indicate availability status.<br><br>
+                            
+                            <strong>Contact Form</strong><br><br>
+                            
+                            Uses semantic <code>&lt;form&gt;</code> and <code>&lt;label&gt;</code> elements to improve accessibility.<br><br>
+                            
+                            <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> fields are included for user interaction.<br><br>
+                            
+                            The submit button includes a text and emoji (<code>✉ Send Message</code>) for better readability and engagement.<br><br>
+                            
+                            <strong>Footer Section</strong><br><br>
+                            
+                            Contains a copyright statement and additional links (Privacy Policy, Page Editor).<br><br>
+                            
+                            Uses an unordered list (<code>&lt;ul&gt;</code>) for structured footer navigation.<br></p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p><strong>Semantic HTML</strong><br><br>
+
+                            The use of <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;footer&gt;</code> improves page structure for screen readers.<br><br>
+                            
+                            <strong>Alternative Text for Images</strong><br><br>
+                            
+                            The profile image includes <code>alt="Profile"</code> to provide a description for visually impaired users.<br><br>
+                            
+                            <strong>Navigation with aria-label</strong><br><br>
+                            
+                            The <code>aria-label="Main Navigation"</code> improves screen reader experience by indicating the purpose of the navigation bar.<br><br>
+                            
+                            <strong>High Contrast & Readability</strong><br><br>
+                            
+                            The color contrast between text (<code>#111827</code>) and background ensures legibility.<br><br>
+                            
+                            White text (<code>rgb(242, 237, 237)</code>) on a blue background (<code>#1d83c3</code>) provides strong contrast.<br><br>
+                            
+                            <strong>Keyboard Navigation</strong><br><br>
+                            
+                            The website is navigable using only the keyboard due to proper HTML structure.<br><br>
+                            
+                            The form fields, buttons, and links are naturally focusable (<code>tabindex</code> is not required explicitly).<br><br>
+                            
+                            <strong>Form Labels for Inputs</strong><br><br>
+                            
+                            Each form field has an associated <code>&lt;label&gt;</code>, ensuring better usability with assistive technologies.<br><br>
+                            
+                            <strong>Scalable & Responsive</strong><br><br>
+                            
+                            The use of <code>grid-template-columns</code> and <code>@media (min-width: 768px)</code> ensures the layout adapts to different screen sizes.<br></p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="sitemap.htm">profile Page</h2>
+                    <h3>Technical Description</h3>
+                        <p><p>
+                            <strong>HTML Structure:</strong><br>
+                            The page uses a semantic structure with a <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>. This is good for SEO and accessibility.<br>
+                            The header contains a navigation bar with links, allowing easy navigation between pages.<br>
+                            The <code>&lt;main&gt;</code> section focuses on the content of the website’s sitemap, and each link in the sitemap is presented with an organized and structured layout.
+                          </p>
+                          
+                          <p>
+                            <strong>CSS Styling:</strong><br>
+                            <strong>Global Styles:</strong><br>
+                            The universal selector <code>*</code> is used to remove default margins and paddings, ensuring consistent spacing across elements.<br>
+                            The <code>box-sizing: border-box;</code> rule ensures that padding and borders are included in an element's total width and height.<br>
+                            <strong>Background Styling:</strong><br>
+                            The background image is applied to the body with <code>background-image</code>, <code>background-size</code>, and <code>background-position</code> properties. However, the value <code>&lt;justify&gt;</code> for background-position is incorrect. You likely meant to use something like <code>center</code> or a specific pixel/percentage value to define the position of the background image.<br>
+                            <strong>Container and Flex Layout:</strong><br>
+                            The <code>.container</code> class ensures that the main content is centered and maintains a max width of 1024px.<br>
+                            Flexbox is used for aligning elements horizontally and vertically, which ensures that the layout is responsive and adaptable to various screen sizes.<br>
+                            <strong>Link and Hover Effects:</strong><br>
+                            The <code>.node-content</code> class applies a background color, padding, and border-radius for the visual appearance of the links. The <code>:hover</code> effect changes the background color of the links, which improves interactivity.<br>
+                            <strong>Vertical Line:</strong><br>
+                            The <code>.vertical-line</code> class adds a simple vertical line between parent and child nodes to represent the structure of the sitemap visually.
+                          </p>
+                          
+                          <p>
+                            <strong>Responsiveness:</strong><br>
+                            The layout utilizes Flexbox to manage the alignment and spacing of elements. However, there isn’t any specific media query to adjust the layout for smaller screens, which might make the page look cluttered on mobile devices. It’s recommended to include media queries to adapt the layout for different screen sizes (e.g., collapsing the sitemap links into a vertical list on smaller screens).
+                          </p>
+                          
+                          <p>
+                            <strong>Footer:</strong><br>
+                            The footer is styled with a margin at the top and uses the <code>text-align: center;</code> property to center the content. It also contains a list of links, but the footer’s font size is large (2rem), which may be too prominent. Consider reducing the font size for the footer text.
+                          </p>
+                          
+                          <p>
+                            <strong>Potential Improvements:</strong><br>
+                            Correct the invalid CSS property <code>&lt;justify&gt;</code> for the background-position.<br>
+                            Add a <code>:focus</code> style to improve accessibility for keyboard navigation.<br>
+                            Ensure proper contrast ratios for text and background colors.<br>
+                            Add a media query to improve the layout on smaller screens.
+                          </p></p> 
+
+                    <h3>Accessibility</h3>
+                        <p><p>
+                            Language Specification:<br>
+                            The html tag has a lang="en" attribute, which helps screen readers and search engines understand the primary language of the page. This is good for accessibility.
+                        </p>
+                        
+                        <p>
+                            Navigation:<br>
+                            You have used the <code>&lt;nav&gt;</code> element to wrap the navigation links, which is great for screen readers as it clearly indicates the navigation section of the page.<br>
+                            The <code>aria-label="Main Navigation"</code> attribute on the <code>&lt;nav&gt;</code> element helps users with screen readers to identify the purpose of the navigation links.
+                        </p>
+                        
+                        <p>
+                            Headings:<br>
+                            The page uses an <code>&lt;h1&gt;</code> for the title "Website Sitemap," which is semantically correct and useful for screen readers. However, the page also contains another <code>&lt;h1&gt;</code> inside the header (Life Under The Water), which could lead to confusion in a screen reader as to which is the main heading. It’s a good practice to only have one <code>&lt;h1&gt;</code> per page (the main heading) and consider using <code>&lt;h2&gt;</code> or <code>&lt;h3&gt;</code> for secondary headings.
+                        </p>
+                        
+                        <p>
+                            Links:<br>
+                            You have used anchor (<code>&lt;a&gt;</code>) tags for the links. However, the links lack title attributes or clear text to describe their destinations. For example, the "Home" link could be more descriptive like "Go to homepage."<br>
+                            The links in the navigation (<code>&lt;a&gt;</code>) are designed for mouse clicks, but they are also focusable for keyboard users. Consider adding <code>:focus</code> styling for accessibility so users can easily see which link is selected when navigating with the keyboard.
+                        </p>
+                        
+                        <p>
+                            Form Elements (if applicable):<br>
+                            There are no form elements in your code, but if you ever add forms, be sure to label each input field clearly using <code>&lt;label&gt;</code> elements for accessibility.
+                        </p>
+                        
+                        <p>
+                            Color Contrast:<br>
+                            The text colors seem to have sufficient contrast in most places, especially with darker backgrounds and lighter text. However, the hover state for the navigation links uses #2c3e50, which may be a bit low in contrast against the background. You can check the contrast ratios using a contrast checker to ensure they meet WCAG guidelines.
+                        </p>
+                        
+                        <p>
+                            Alternative Text for Images:<br>
+                            You use a background image for the body (background-image: url('sitemap.jpg');) but do not provide an alt attribute or description of the image. While background images don’t require alt text, it’s always helpful to provide meaningful context for users with visual impairments.
+                        </p>
+                        
+                        <p>
+                            Focus Styles:<br>
+                            The code doesn’t include custom focus styles for elements like links or interactive elements. This could be crucial for users who navigate using the keyboard (e.g., by tabbing through elements). Adding <code>:focus</code> styles ensures that users can visually track their position.
+                        </p>.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p><p><strong>1. Responsive Design Issues</strong><br>
+                        Challenge: Ensuring the layout adapts seamlessly to various screen sizes (from mobile phones to desktops) can be tricky. For example, when using flexbox or grid layouts, unexpected overlaps or misalignments can occur on smaller screens.<br>
+                        Solution: Use media queries and test the design across different devices. You can adjust the layout, font sizes, and spacing to fit smaller screens better.</p>
+                        
+                        <p><strong>2. Navigation Accessibility</strong><br>
+                        Challenge: Creating a navigation system that works well for both mouse and keyboard users, as well as screen readers, can be difficult. The sticky navigation bar (.content-nav) needs to be properly accessible to ensure that all users can navigate the content.<br>
+                        Solution: Ensure that the navigation menu is focusable and accessible via the keyboard. Adding aria-labels, tabindex, and ensuring that links are properly marked up with meaningful text can improve accessibility.</p>
+                        
+                        <p><strong>3. Image Loading and Optimization</strong><br>
+                        Challenge: The large number of images used in the page (for example, in the image containers and impact cards) can result in slow loading times, especially on mobile networks.<br>
+                        Solution: Optimize images by compressing them before uploading. Use responsive image attributes like srcset to load smaller images on mobile devices and larger ones on desktops.</p>
+                        
+                        <p><strong>4. Cross-Browser Compatibility</strong><br>
+                        Challenge: Ensuring the page works uniformly across different browsers (Chrome, Firefox, Safari, Edge, etc.) can be difficult. CSS properties like position: sticky may not work as expected on all browsers.<br>
+                        Solution: Test the page in multiple browsers and use browser-specific prefixes or polyfills for certain CSS properties. Additionally, fallbacks like position: fixed can be used where necessary for older browsers.</p>
+                        
+                        <p><strong>5. JavaScript Functionality</strong><br>
+                        Challenge: Ensuring smooth and bug-free JavaScript behavior can be a challenge, especially when implementing functions like the "back to top" button or dynamic navigation highlighting.<br>
+                        Solution: Carefully test all JavaScript functions, particularly the event listeners, to ensure they work as expected in all browsers. Debugging tools (like browser developer tools) can be used to troubleshoot issues.</p></p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p><p><strong>1. Web Content Accessibility Guidelines (WCAG)</strong><br>
+
+                        Compliance:<br>
+                        
+                        WCAG 2.1 outlines specific guidelines to make web content more accessible for users with disabilities. Compliance with these guidelines ensures your site is usable for people with visual, auditory, motor, or cognitive impairments.<br>
+                        
+                        Ensure that your website meets Level AA conformance at a minimum, which is required by various legal regulations globally (such as Section 508 in the U.S. and EN 301 549 in the EU).<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Text Alternatives: All images should have descriptive alt text.<br>
+                        
+                        Keyboard Accessibility: Ensure all interactive elements are accessible via keyboard.<br>
+                        
+                        Contrast: Ensure sufficient contrast between text and background.<br>
+                        
+                        Form Labels: Properly label form elements to make them accessible.<br>
+                        
+                        Error Identification: Provide clear and understandable error messages.<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        WCAG 2.1 Guidelines</p>
+                        
+                        
+                        
+                        <p><strong>2. General Data Protection Regulation (GDPR)</strong><br>
+                        
+                        Compliance:<br>
+                        
+                        If you're collecting any personal data from users (such as through forms or cookies), you need to comply with GDPR if your site targets users in the European Union. This includes providing transparent information about data collection, securing consent, and enabling users to manage their data.<br>
+                        
+                        Ensure that all forms that collect data have a privacy policy or terms and conditions link.<br>
+                        
+                        Users must be informed and give consent (through checkboxes or pop-ups) before you collect cookies or personal information.<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Data Minimization: Only collect the necessary data.<br>
+                        
+                        Consent: Obtain explicit consent for data collection.<br>
+                        
+                        Cookie Policy: Display a cookie consent banner to inform users.<br>
+                        
+                        Right to Access and Delete Data: Allow users to request access to or deletion of their personal data.<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        GDPR Overview</p>
+                        
+                        
+                        
+                        <p><strong>3. The Americans with Disabilities Act (ADA)</strong><br>
+                        
+                        Compliance:<br>
+                        
+                        ADA compliance requires that public websites be accessible to people with disabilities. This is similar to WCAG and generally overlaps but is more focused on the U.S. legal framework.<br>
+                        
+                        ADA mandates that digital platforms be as accessible as physical locations, which can include compliance with WCAG standards.<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Visual Accessibility: Make sure content is perceivable for users with visual impairments.<br>
+                        
+                        Navigation: Ensure keyboard-only users can fully navigate your site.<br>
+                        
+                        Screen Reader Compatibility: Use proper HTML semantics and ARIA (Accessible Rich Internet Applications) attributes to improve accessibility.<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        ADA Compliance</p>
+                        
+                        
+                        
+                        <p><strong>4. Section 508 Compliance (U.S. Federal Government)</strong><br>
+                        
+                        Compliance:<br>
+                        
+                        Section 508 requires federal agencies to make electronic and information technology accessible to people with disabilities. This includes websites, software, and digital documents. If you're creating websites for government contracts or federal agencies, ensuring compliance with Section 508 is critical.<br>
+                        
+                        The standards for Section 508 align with WCAG, but there are specific requirements for government applications, including multimedia content and interactive forms.<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Multimedia Content: Ensure videos have captions or transcripts.<br>
+                        
+                        Interactive Elements: Forms and interactive content must be navigable and operable for people with disabilities.<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        Section 508 Compliance</p>
+                        
+                        
+                        
+                        <p><strong>5. Mobile Responsiveness Compliance</strong><br>
+                        
+                        Compliance:<br>
+                        
+                        As more users access websites on mobile devices, making sure your HTML code is responsive is crucial. Mobile responsiveness is not just a design choice but also a legal requirement in some jurisdictions for accessibility.<br>
+                        
+                        You should use responsive web design principles (media queries, flexible grids, etc.) to ensure your site adapts to different screen sizes and orientations.<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Viewport Settings: Ensure your pages are optimized for mobile devices (use <meta name="viewport" content="width=device-width, initial-scale=1">).<br>
+                        
+                        Touch Events: Make interactive elements large enough to be used on mobile devices (buttons, links).<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        Google Mobile-Friendly Test</p>
+                        
+                        
+                        
+                        <p><strong>6. Copyright and Licensing Compliance</strong><br>
+                        
+                        Compliance:<br>
+                        
+                        When using third-party content (images, fonts, videos, etc.), make sure you have the right to use them. This may involve purchasing licenses or using open-source resources under licenses like Creative Commons.<br>
+                        
+                        Avoid using copyrighted material without permission, as this can lead to legal consequences.<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Licensing: Ensure any content you use (images, media, etc.) is properly licensed or attributed.<br>
+                        
+                        Attribution: If using Creative Commons or open-source content, ensure proper attribution.<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        Creative Commons<br>
+                        
+                        Fair Use Guidelines</p>
+                        
+                        
+                        
+                        <p><strong>7. Cookie Consent and Privacy Policy</strong><br>
+                        
+                        Compliance:<br>
+                        
+                        Many countries require websites to obtain consent from users before storing cookies or tracking their data. You need to inform users about the data collection and provide an option to opt-out or manage cookies.<br>
+                        
+                        Make sure your site has an accessible privacy policy explaining how you collect, store, and use user data.<br>
+                        
+                        <strong>Key Areas of Compliance:</strong><br>
+                        
+                        Cookie Consent: Display a banner or pop-up to ask for user consent for cookies.<br>
+                        
+                        Privacy Policy: Have a clear, accessible privacy policy linked from the footer of your website.<br>
+                        
+                        <strong>Reference:</strong><br>
+                        
+                        EU Cookie Law Compliance<br>
+                        
+                        Cookie Consent</p></p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#">Home page </a></li>
+                        <li><a href="#">Table page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="profile.html">Profile page </a></li>
+                        <li><a href="sitemap.html">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>
+              Page Editor:
+              <a href="content/dilshan/editor_ST1.html">Student 1</a> |
+              <a href="content/nohim/editor_ST2.html">Student 2</a> |
+              <a href="content/thusiru/editor_ST3.html">Student 3</a> |
+              <a href="pageEditor.html">Student 4</a>
+            </p>
+            <p>
+              <a href="validation.html">Validation</a> |
+              <a href="content/accessibility.html">Accessibility Compliance</a>
+            </p>
+            <p class="rights-reserved">
+              © 2025 Life Below Water. All rights reserved.
+            </p>
+          </div>
+  
+          <!-- Back to Top Button -->
+          <a
+            href="#"
+            id="back-to-top"
+            class="back-to-top-button"
+            aria-label="Back to top"
+          >
+            <i class="fas fa-arrow-up"></i>
+          </a>
+    </footer>
+</body>
+</html>
