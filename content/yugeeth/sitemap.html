@@ -3,44 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Map - Life Under the Water</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title> Website Sitemap</title>
     <style>
-        svg {
-            background-color: var(--alice-blue);
-            width: 100%;
-            max-width: 900px;
-            margin: 20px auto;
-            display: block;
-            border: 2px solid var(--yale-blue);
-            border-radius: 10px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            background-image: url('sitemap.jpg');
+            background-size: cover;
+            background-position: <justify>;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+        }
+
+        .header svg {
+            width: 2rem;
+            height: 2rem;
+            color: rgb(19, 27, 46);
+        }
+
+        .header h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: rgb(17, 24, 39);
+        }
+
+        .sitemap {
+            width: 200%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .node {
-            fill: var(--pacific-cyan);
-            stroke: var(--yale-blue);
-            stroke-width: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        text {
-            fill: var(--rich-black);
+
+        .node-content {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 25px;
+            background-color: rgb(31, 159, 209);
+            padding: 4rem 6rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(5, 99, 193, 0.1);
+            border: 3px solid rgb(0, 0, 0);
+            text-decoration :rgb(0, 0, 0)>; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+        }
+
+        .node-content:hover {
+            background-color: rgb(243, 244, 246); /* Add hover effect */
+        }
+
+        .node-title {
+            font-weight: 500;
+            color: rgb(6, 14, 122);
+        }
+
+        .children {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .vertical-line {
+            width: 1px;
+            height: 2rem;
+            background-color: rgb(14, 15, 15);
+        }
+
+        .children-row {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.875rem;
+            color: rgb(15, 16, 17);
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #a5d1db; /* Blue background */
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 50px;
             font-weight: bold;
-            font-size: 14px;
+            color: rgb(251, 241, 241); /* Black text */
+            padding: 10px;
         }
-        line {
-            stroke: var(--yale-blue);
-            stroke-width: 2;
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #1d83c3; /* Light blue background */
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(242, 235, 235); /* White text */
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #2c3e50; /* Darker text on hover */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Site Map - Life Under the Water</h1>
-        <nav>
+        <h1>Life Under The Water</h1>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
                 <li><a href="table.html">Table</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="profile.html">User Profile</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
                 <li><a href="team.html">Team</a></li>
@@ -48,25 +159,91 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Website Structure - Life Under the Water</h2>
-        <svg viewBox="0 0 900 600">
-            <line x1="450" y1="90" x2="450" y2="130" />
-            <a href="home.html"><rect class="node" x="400" y="50" width="100" height="40" /><text x="450" y="75" text-anchor="middle">Home</text></a>
-            <a href="volunteer.html"><rect class="node" x="200" y="150" width="150" height="40" /><text x="275" y="175" text-anchor="middle">Volunteer</text></a>
-            <a href="table.html"><rect class="node" x="400" y="150" width="150" height="40" /><text x="475" y="175" text-anchor="middle">Table</text></a>
-            <a href="profile.html"><rect class="node" x="600" y="150" width="150" height="40" /><text x="675" y="175" text-anchor="middle">Profile</text></a>
-            <line x1="450" y1="90" x2="275" y2="150" />
-            <line x1="450" y1="90" x2="475" y2="150" />
-            <line x1="450" y1="90" x2="675" y2="150" />
-            <a href="feedback.html"><rect class="node" x="600" y="230" width="150" height="40" /><text x="675" y="255" text-anchor="middle">Feedback</text></a>
-            <a href="sitemap.html"><rect class="node" x="400" y="300" width="100" height="40" /><text x="450" y="325" text-anchor="middle">Sitemap</text></a>
-            <a href="team.html"><rect class="node" x="400" y="400" width="100" height="40" /><text x="450" y="425" text-anchor="middle">Team</text></a>
-        </svg>
-    </main>
+    <div class="container">
+        <div class="header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="18" r="3"/>
+                <circle cx="6" cy="6" r="3"/>
+                <circle cx="18" cy="6" r="3"/>
+                <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/>
+                <path d="M12 12v3"/>
+            </svg>
+            <h1>Website Sitemap</h1>
+        </div>
 
+        <div class="sitemap">
+            <div class="node">
+                <a href="home.html" class="node-content">
+                    <span class="node-title">Home</span>
+                </a>
+                <div class="children">
+                    <div class="vertical-line"></div>
+                    <div class="children-row">
+                        <div class="node">
+                            <a href="volunteer.html" class="node-content">
+                                <span class="node-title">Volunteer</span>
+                            </a>
+                        </div>
+                        <div class="node">
+                            <a href="table.html" class="node-content">
+                                <span class="node-title">Table</span>
+                            </a>
+                        </div>
+                        <div class="node">
+                            <a href="profile.html" class="node-content">
+                                <span class="node-title">User Profile</span>
+                            </a>
+                        </div>
+                        <div class="node">
+                            <a href="feedback.html" class="node-content">
+                                <span class="node-title">Feedback</span>
+                            </a>
+                        </div>
+                        <div class="node">
+                            <a href="team.html" class="node-content">
+                                <span class="node-title">Team</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <footer>
-        <p>Created by Student 4 - <a href="pageEditor_ST4.html">Page Editor</a></p>
-    </footer>
+        <div class="footer-bottom">
+            <p>
+              Page Editor:
+              <a href="content/dilshan/editor_ST1.html">Student 1</a> |
+              <a href="content/nohim/editor_ST2.html">Student 2</a> |
+              <a href="content/thusiru/editor_ST3.html">Student 3</a> |
+              <a href="pageEditor.html">Student 4</a>
+            </p>
+            <p>
+              <a href="validation.html">Validation</a> |
+              <a href="content/accessibility.html">Accessibility Compliance</a>
+            </p>
+            <p class="rights-reserved">
+              © 2025 Life Below Water. All rights reserved.
+            </p>
+          </div>
+  
+          <!-- Back to Top Button -->
+          <a
+            href="#"
+            id="back-to-top"
+            class="back-to-top-button"
+            aria-label="Back to top"
+          >
+            <i class="fas fa-arrow-up"></i>
+          </a>
+      <style>
+        footer{
+            margin-top: 3rem;
+            font-size: 2rem;
+            color: rgb(231, 237, 243);
+            text-align: center;
+        }
+      </style>
 </body>
 </html>
